@@ -2,19 +2,17 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { EventComponent } from './event/event.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { CardComponent } from './models/card/card.component';
+import { ProjectCardComponent } from './models/cards/project-card/project-card.component';
+import { CardsModule } from './models/cards/cards.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    EventComponent,
-    CardComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,CardsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

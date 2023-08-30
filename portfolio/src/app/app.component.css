@@ -1,6 +1,8 @@
 .hello-card {
-  padding: 5%;
-  padding-right: 30%;
+  width: 40%;
+  padding: 2%;
+
+  background: linear-gradient(to top left, #fbe4d8, #854f5c);
 }
 .headshot-card {
   padding: 5%;
@@ -16,4 +18,21 @@
 .subtitle {
   color: black;
   padding: 5%;
+}
+.card-holder {
+  justify-content: center;
+  padding-left: 25% auto;
+  padding: 2%;
+}
+.project-card {
+  padding-right: 25%;
+}
+.project-card-holder {
+  justify-content: center;
+}
+
+.clor-pralet {
+  background-color: #fbe4d8;
+  background-color: #854f5c;
+  background-color: #522b5b;
 }

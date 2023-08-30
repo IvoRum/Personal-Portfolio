@@ -1,3 +1,22 @@
 <body>
-    <app-project-card></app-project-card>
+  <div class="card-holder" fxLayout="row wrap" fxLayoutGap="20px">
+    <mat-card class="hello-card">
+      <mat-card-header>
+        <mat-card-title class="title"
+          >Hello, I`m Ivo, a web developer.</mat-card-title
+        >
+        <mat-card-subtitle class="subtitle"
+          >Crafting Digital Excellence: Transforming Ideas into Engaging
+          Websites.</mat-card-subtitle
+        >
+      </mat-card-header>
+    </mat-card>
+    <mat-card class="card"
+      ><img
+        mat-card-image
+        src="https://i.pinimg.com/564x/01/8e/73/018e73b515b25cbba0efc02463cb5627.jpg"
+      />
+    </mat-card>
+  </div>
+  <app-project-card [projectList]="projectList"></app-project-card>
 </body>

@@ -1,0 +1,19 @@
+.hello-card {
+  padding: 5%;
+  padding-right: 30%;
+}
+.headshot-card {
+  padding: 5%;
+}
+/* Example usage of a serif font */
+.title {
+  font-family: Georgia, Times New Roman, serif;
+  font-size: 48px;
+  line-height: 1.2;
+  padding: 5%;
+}
+
+.subtitle {
+  color: black;
+  padding: 5%;
+}

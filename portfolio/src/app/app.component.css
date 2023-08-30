@@ -1,11 +1,9 @@
 .hello-card {
-  width: 40%;
   padding: 2%;
-
+  width: 40%;
   background: linear-gradient(to top left, #fbe4d8, #854f5c);
 }
 .headshot-card {
-  padding: 5%;
 }
 /* Example usage of a serif font */
 .title {
@@ -21,11 +19,9 @@
 }
 .card-holder {
   justify-content: center;
-  padding-left: 25% auto;
-  padding: 2%;
+  padding: 8%;
 }
 .project-card {
-  padding-right: 25%;
 }
 .project-card-holder {
   justify-content: center;

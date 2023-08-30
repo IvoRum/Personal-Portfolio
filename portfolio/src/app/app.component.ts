@@ -17,7 +17,8 @@ export class AppComponent {
     },
     {
       name: 'FitFusion',
-      description: 'Is a direct line to personalized health and wellness.',
+      description:
+        'Is a direct line to personalized health and wellness. Train, plane and meal prep.',
       img: 'https://cdn.dribbble.com/userupload/9070186/file/original-b976caf1433a73a00e9839621919a27e.png?resize=1024x768&vertical=center',
     },
   ];

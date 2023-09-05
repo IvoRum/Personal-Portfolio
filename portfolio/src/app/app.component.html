@@ -1,43 +1,31 @@
-<table>
-  <tr>
-    <td>
-      <!-- <div class="card-holder" fxLayout="row wrap" fxLayoutGap="20px"> -->
-      <!-- <mat-card class="hello-card"> -->
-      <mat-card>
-        <mat-card-header>
-          <mat-card-title class="title"
-            >Hello, I`m Ivo, a web developer.</mat-card-title
-          >
-          <mat-card-subtitle
-            >Crafting Digital Excellence: Transforming Ideas into Engaging
-            Websites.</mat-card-subtitle
-          >
-        </mat-card-header>
-        <mat-card-footer><mat-icon>alternate_email</mat-icon></mat-card-footer>
-      </mat-card>
-    </td>
-    <td>
-      <!-- <mat-card class="card"> -->
-      <mat-card>
-        <img
-          mat-card-image
-          src="https://i.pinimg.com/564x/01/8e/73/018e73b515b25cbba0efc02463cb5627.jpg"
-        />
-      </mat-card>
-    </td>
-  </tr>
-  <tr>
-    <!-- <div fxFlex="calc(44.33% )" *ngFor="let card of projectList"> -->
-    <div *ngFor="let card of projectList">
-      <!-- <mat-card class="card"> -->
-      <mat-card class="card">
-        <mat-card-header>
-          <mat-card-title>{{ card.name }}</mat-card-title>
-          <mat-card-subtitle>{{ card.description }}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="{{ card.img }}" />
-      </mat-card>
-    </div>
-    <!--    </div> -->
-  </tr>
-</table>
+<div class="card-holder" fxLayout="row wrap" fxLayoutGap="20px">
+  <mat-card class="hello-card">
+    <mat-card-header>
+      <mat-card-title class="title"
+        >Hello, I`m Ivo, a web developer.</mat-card-title
+      >
+      <mat-card-subtitle class="subtitle"
+        >Crafting Digital Excellence: Transforming Ideas into Engaging
+        Websites.</mat-card-subtitle
+      >
+    </mat-card-header>
+    <mat-card-footer><mat-icon>alternate_email</mat-icon></mat-card-footer>
+  </mat-card>
+
+  <mat-card class="card"
+    ><img
+      mat-card-image
+      src="https://i.pinimg.com/564x/01/8e/73/018e73b515b25cbba0efc02463cb5627.jpg"
+    />
+  </mat-card>
+  <br />
+  <div fxFlex="calc(33.33% )" *ngFor="let card of projectList">
+    <mat-card class="card">
+      <mat-card-header>
+        <mat-card-title>{{ card.name }}</mat-card-title>
+        <mat-card-subtitle>{{ card.description }}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{ card.img }}" />
+    </mat-card>
+  </div>
+</div>

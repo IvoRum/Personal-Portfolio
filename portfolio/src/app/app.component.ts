@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { project } from './data/project';
 export interface Tile {
   color: string;
   cols: number;
@@ -14,6 +13,16 @@ export interface Tile {
 export class AppComponent {
   title = 'portfolio';
   projectList = [
+    {
+      name: 'Hello, I`m Ivo, a web developer.',
+      description:
+        'Crafting Digital Excellence: Transforming Ideas into Engaging Websites.',
+      img: '',
+      class: 'hello-card',
+    },
+    {
+      img: 'https://i.pinimg.com/564x/01/8e/73/018e73b515b25cbba0efc02463cb5627.jpg',
+    },
     {
       name: 'TicketFlow',
       description:

@@ -1,6 +1,6 @@
 .hello-card {
   padding: 2%;
-  width: 40%;
+  height: 100%;
   background: linear-gradient(to top left, #fbe4d8, #854f5c);
 }
 .headshot-card {
@@ -22,6 +22,8 @@
   padding: 8%;
 }
 .project-card {
+  padding-top: 10px;
+  padding-left: 14%;
 }
 .project-card-holder {
   justify-content: center;

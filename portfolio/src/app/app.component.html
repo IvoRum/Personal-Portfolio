@@ -1,48 +1,34 @@
 <div class="card-holder" fxLayout="row wrap" fxLayoutGap="20px">
-  <mat-card class="hello-card">
-    <mat-card-header>
-      <mat-card-title class="title"
-        >Hello, I`m Ivo, a web developer.</mat-card-title
+  <div class="project-card">
+    <div fxLayout="row wrap" fxLayoutGap="10px grid">
+      <div
+        fxFlex="42%"
+        fxFlex.xs="100%"
+        fxFlex.sm="33%"
+        *ngFor="let card of projectList"
       >
-      <mat-card-subtitle class="subtitle"
-        >Crafting Digital Excellence: Transforming Ideas into Engaging
-        Websites.</mat-card-subtitle
-      >
-    </mat-card-header>
-    <mat-card-footer><mat-icon>alternate_email</mat-icon></mat-card-footer>
-  </mat-card>
-
-  <mat-card class="card"
-    ><img
-      mat-card-image
-      src="https://i.pinimg.com/564x/01/8e/73/018e73b515b25cbba0efc02463cb5627.jpg"
-    />
-  </mat-card>
-  <br />
-  <div fxFlex="calc(33.33% )" *ngFor="let card of projectList">
-    <mat-card class="card">
-      <mat-card-header>
-        <mat-card-title>{{ card.name }}</mat-card-title>
-        <mat-card-subtitle>{{ card.description }}</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="{{ card.img }}" />
-    </mat-card>
+        <mat-card class="{{ card.class }}">
+          <mat-card-header>
+            <mat-card-title>{{ card.name }}</mat-card-title>
+            <mat-card-subtitle>{{ card.description }}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="{{ card.img }}" />
+        </mat-card>
+      </div>
+    </div>
   </div>
-<<<<<<< HEAD
   <div class="project-card"></div>
-</body>
 
-<div>
-  <mat-grid-list cols="3" rowHeight="100px">
-    <mat-grid-tile
-      *ngFor="let tile of tiles"
-      [colspan]="tile.cols"
-      [rowspan]="tile.rows"
-      [style.background]="tile.color"
-    >
-      {{ tile.text }}
-    </mat-grid-tile>
-  </mat-grid-list>
-=======
->>>>>>> a1f11fc00837f4913d1676ab6849567c509a6eba
+  <div>
+    <mat-grid-list cols="3" rowHeight="100px">
+      <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color"
+      >
+        {{ tile.text }}
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </div>

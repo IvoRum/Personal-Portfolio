@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 export interface Tile {
   color: string;
   cols: number;
@@ -34,6 +35,7 @@ export class AppComponent {
       description:
         'Is a direct line to personalized health and wellness. Train, plane and meal prep.',
       img: 'https://cdn.dribbble.com/userupload/9070186/file/original-b976caf1433a73a00e9839621919a27e.png?resize=1024x768&vertical=center',
+      link: 'fitfusion',
     },
   ];
 
@@ -43,4 +45,6 @@ export class AppComponent {
     { text: 'Three', cols: 3, rows: 3, color: 'lightpink' },
     { text: 'Four', cols: 3, rows: 3, color: '#DDBDF1' },
   ];
+
+  constructor(private readonly route: ActivatedRoute) {}
 }

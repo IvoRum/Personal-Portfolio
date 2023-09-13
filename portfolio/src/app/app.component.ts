@@ -1,50 +1,11 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-export interface Tile {
-  color: string;
-  cols: number;
-  rows: number;
-  text: string;
-}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'portfolio';
-  projectList = [
-    {
-      name: 'Hello, I`m Ivo, a web developer.',
-      description:
-        'Crafting Digital Excellence: Transforming Ideas into Engaging Websites.',
-      img: '',
-      class: 'hello-card',
-    },
-    {
-      img: 'https://i.pinimg.com/564x/01/8e/73/018e73b515b25cbba0efc02463cb5627.jpg',
-    },
-    {
-      name: 'TicketFlow',
-      description:
-        'Is a all-in-one solution for seamless ticketing, queue management, and reservations.',
-      img: 'https://cdn.dribbble.com/userupload/5516257/file/original-915761691430db03304277e819801011.png?resize=1024x768&vertical=center',
-    },
-    {
-      name: 'FitFusion',
-      description:
-        'Is a direct line to personalized health and wellness. Train, plane and meal prep.',
-      img: 'https://cdn.dribbble.com/userupload/9070186/file/original-b976caf1433a73a00e9839621919a27e.png?resize=1024x768&vertical=center',
-      link: 'fitfusion',
-    },
-  ];
-
-  tiles: Tile[] = [
-    { text: 'One', cols: 2, rows: 2, color: 'lightblue' },
-    { text: 'Two', cols: 1, rows: 2, color: 'lightgreen' },
-    { text: 'Three', cols: 3, rows: 3, color: 'lightpink' },
-    { text: 'Four', cols: 3, rows: 3, color: '#DDBDF1' },
-  ];
-
   constructor(private readonly route: ActivatedRoute) {}
 }

@@ -1,0 +1,86 @@
+.container {
+  margin: 10px;
+}
+
+.item {
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 2em;
+  padding: 3em 1em;
+  text-transform: uppercase;
+}
+
+.header {
+  border-radius: 0.2em;
+  color: #ffffff;
+  font-family: sans-serif;
+  font-size: 2em;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+  text-transform: none;
+}
+
+.nav-buttons {
+  color: #ffffff;
+  justify-content: center;
+  text-decoration: none;
+  text-transform: none;
+  height: auto;
+}
+
+h1 {
+  font-family: Arial, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  padding-top: 0.5em;
+  padding-left: 1em;
+}
+
+a {
+  font-family: Andale Mono, monospace;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  padding: 20px 5px 5px 5px;
+  padding-top: 5px;
+}
+
+.item-1 {
+  background-color: #35a29f;
+}
+
+.item-2 {
+  background-color: #088395;
+}
+
+.item-3 {
+  background-color: #071952;
+}
+
+.item-4 {
+  background-color: #f2f7a1;
+}
+
+.item-5 {
+  background-color: #ffffff;
+}
+
+.fitured-blog {
+  max-width: 100%;
+}
+
+.border {
+  border: 2px solid #333;
+}

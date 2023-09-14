@@ -84,3 +84,9 @@ a {
 .border {
   border: 2px solid #333;
 }
+
+.crop {
+  width: 100%;
+  object-fit: cover;
+  object-position: 25% 25%;
+}

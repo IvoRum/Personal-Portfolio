@@ -96,3 +96,11 @@ a {
   height: 500px; 
   overflow: hidden;
 }
+
+.underline{
+  border-bottom: 2px solid #333;
+}
+
+.overline{
+  border-top: 2px solid #333;
+}

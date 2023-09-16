@@ -12,7 +12,7 @@
   <button class="border header item-5 nav-buttons" mat-button>Trainers</button>
   <button class="border header item-4 nav-buttons" mat-button>Profile</button>
 </div>
-<h1>Wellcome</h1>
+<h1>Welcome</h1>
 <div
   class="container"
   fxLayout
@@ -21,7 +21,8 @@
   fxLayoutGap.xs="0"
 >
   <div fxFlex="25%" class="border">
-    <h1>New Blog post</h1>
+    <div class="underline">
+    <h1>New Blog post</h1></div>
     <img class="fitured-blog" src="assets\img\blog1.jpg" />
     <a>Why Women Over 30 Should Try CrossFit</a>
   </div>
@@ -29,20 +30,22 @@
     <div class="item-2">
       <h1>Fitness Schedules</h1>
     </div>
-    <div class="item-5">
+    <div class="item-5 overline underline">
       <a>CrossFit -></a><br />
       <a>Yoga -></a><br />
       <a>Somthing -></a><br />
       <a>Swimming -></a><br />
     </div>
   </div>
-  <div class="border item-4" fxFlex="30%">
-    <h1>Our Trainers</h1>
-    <div class="trainer-list" >
-
+  <div class="border item-4 " fxFlex="30%">
+    <div class="underline">
+    <h1 >Our Trainers</h1></div>
+    <a>Name|Experience|Score</a>
+    <div class="item-5 trainer-list overline" *ngFor="let trainer of trainerList">
+      <a>{{trainer.name}}|{{trainer.experience}}|{{trainer.score}}</a>
     </div>
-    <div class="trainer-img">
-    <img class="fitured-blog crop" src="assets\img\trainer.jpg" />
+    <div class="trainer-img overline item-5 underline">     <h1> Featured Trainers</h1>
+    <img class="fitured-blog crop overline" src="assets\img\trainer.jpg" /> 
   </div>
   </div>
 </div>

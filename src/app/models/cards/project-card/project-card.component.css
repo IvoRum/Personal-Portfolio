@@ -39,6 +39,7 @@
 .profile {
   width: 100%;
   background: linear-gradient(to top left, #fbe4d8, #959ac1);
+  background-image: "./localAssets/CropIvo2.png";
 }
 
 .profilemain {

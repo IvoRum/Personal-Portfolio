@@ -24,7 +24,8 @@ export class ProjectCardComponent {
       description:
         'Crafting Digital Excellence: Transforming Ideas into Engaging Websites.',
       img: '',
-      class: 'hello-card',
+      class: 'title hello-card',
+      titleclass: 'title',
     },
     {
       img: 'assets/img/CropIvo2.png',

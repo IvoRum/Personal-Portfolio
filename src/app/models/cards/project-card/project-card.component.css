@@ -6,12 +6,11 @@
 }
 .headshot-card {
 }
-/* Example usage of a serif font */
 .title {
-  font-family: Georgia, Times New Roman, serif;
-  font-size: 48px;
+  /*font-family: Georgia, Times New Roman, serif;*/
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 38px;
   line-height: 1.2;
-  padding-left: 5%;
 }
 
 .subtitle {
@@ -20,7 +19,6 @@
 }
 .card-holder {
   justify-content: center;
-  padding: 8%;
 }
 .project-card {
   padding-top: 10px;

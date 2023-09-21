@@ -142,3 +142,8 @@ a {
   padding-top: 5px;
   padding-right: 1.2em;
 }
+
+.black-tint{
+  color: #000000;
+  background-color: #000000;
+}

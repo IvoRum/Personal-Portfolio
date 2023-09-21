@@ -1,16 +1,16 @@
 .hello-card {
   padding: 2%;
   height: 100%;
-  background: linear-gradient(to top left, #fbe4d8, #854f5c);
+  /* background: linear-gradient(to top left, #fbe4d8, #854f5c); */
+  background: linear-gradient(to top left, #fbe4d8, #959ac1);
 }
 .headshot-card {
 }
-/* Example usage of a serif font */
 .title {
-  font-family: Georgia, Times New Roman, serif;
-  font-size: 48px;
+  /*font-family: Georgia, Times New Roman, serif;*/
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 38px;
   line-height: 1.2;
-  padding-left: 5%;
 }
 
 .subtitle {
@@ -19,7 +19,6 @@
 }
 .card-holder {
   justify-content: center;
-  padding: 8%;
 }
 .project-card {
   padding-top: 10px;
@@ -33,4 +32,15 @@
   background-color: #fbe4d8;
   background-color: #854f5c;
   background-color: #522b5b;
+}
+
+.profile {
+  width: 100%;
+  background: linear-gradient(to top left, #fbe4d8, #959ac1);
+  background-image: "./localAssets/CropIvo2.png";
+}
+
+.profilemain {
+  height: 100%;
+  background: linear-gradient(to top left, #fbe4d8, #959ac1);
 }

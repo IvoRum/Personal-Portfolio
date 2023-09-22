@@ -89,6 +89,10 @@ a {
   background-size: 100% 100%;
 }
 
+.item-7 {
+  background-color: #ffffff;
+}
+
 .frost-1 {
   background-image: url("1.jpg");
   background-repeat: no-repeat;
@@ -96,7 +100,7 @@ a {
 }
 
 .concave {
-  border-radius: 10px; /* Adjust for concave effect */
+  border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -143,7 +147,44 @@ a {
   padding-right: 1.2em;
 }
 
-.black-tint{
-  color: #000000;
-  background-color: #000000;
+.black-tint-img {
+  background-image: url("getfit.jpg");
+  background-color: #0000003b;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.motivatio {
+  font-family: Oswald, sans-serif;
+  font-size: 3.7em;
+  line-height: 1.1em;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: none;
+  text-align: left;
+  text-decoration: underline;
+  padding-bottom: 25px;
+}
+
+.motivatio-sub-text {
+  font-family: Oswald, sans-serif;
+  color: #ffffff;
+  font-size: 1.3em;
+  line-height: 1em;
+  text-decoration: none;
+  text-transform: none;
+  padding-bottom: 4em;
+}
+
+.bottom-button {
+  justify-self: center;
+  align-self: flex-end;
+  margin-bottom: 10px; /* Add some spacing if needed */
+  padding-left: 1em;
+  margin: 20px;
 }

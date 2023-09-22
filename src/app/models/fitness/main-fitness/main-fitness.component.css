@@ -21,7 +21,8 @@
 }
 
 .fit-fusio {
-  font-size: 2.5em;
+  font-size: 3em;
+  text-align: center;
 }
 
 .logo {
@@ -31,6 +32,7 @@
   text-decoration: none;
   text-transform: none;
   text-align: left;
+  padding-left: 8%;
 }
 
 .nav-buttons {
@@ -80,7 +82,7 @@ a {
 }
 
 .item-5 {
-  background-color: #ffffff88;
+  background-color: #ffffffdc;
 }
 
 .item-6 {
@@ -144,7 +146,7 @@ a {
   text-decoration: none;
   text-transform: none;
   padding-top: 5px;
-  padding-right: 1.2em;
+  padding-right: 5%;
 }
 
 .black-tint-img {
@@ -178,7 +180,7 @@ a {
   line-height: 1em;
   text-decoration: none;
   text-transform: none;
-  padding-bottom: 4em;
+  padding-bottom: 10%;
 }
 
 .bottom-button {
@@ -187,4 +189,8 @@ a {
   margin-bottom: 10px; /* Add some spacing if needed */
   padding-left: 1em;
   margin: 20px;
+}
+
+.flexy {
+  display: flex;
 }

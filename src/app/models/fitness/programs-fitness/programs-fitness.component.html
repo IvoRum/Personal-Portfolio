@@ -1,0 +1,74 @@
+<div class="mainpage">
+  <div
+    class="container"
+    fxLayout
+    fxLayoutAlign="left"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0"
+  >
+    <div
+      [routerLink]="['/fitfusion']"
+      class="header logo fit-fusio"
+      fxFlex="35%"
+    >
+      Fit Fusion
+    </div>
+
+    <button
+      routerLink="/fitfusion/programs"
+      class="border header item-2 nav-buttons"
+      mat-button
+    >
+      Services
+    </button>
+    <button
+      routerLink="/fitfusion/programs"
+      class="border header item-2 nav-buttons"
+      mat-button
+    >
+      Programs
+    </button>
+
+    <button
+      routerLink="/fitfusion/programs"
+      class="border header item-2 nav-buttons"
+      mat-button
+    >
+      Trainers
+    </button>
+    <div fxFlex="35%" class="rr">
+      <button mat-fab class="border item-2" color="prime" aria-label="Sight in">
+        <mat-icon>person</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div
+    class="container"
+    fxLayout
+    fxLayoutAlign="center"
+    fxLayoutGap="10px"
+    fxLayoutGap.xs="0"
+  >
+    <div fxFlex="20%" class="item-1">
+      <img class="fitured-blog" src="assets\img\plan1.jpg" />
+    </div>
+    <div fxFlex="66%" class="item-1">
+      <h1>Programs</h1>
+      <table class="item-2">
+        <tr>
+          <td>Name</td>
+          <td>Proficiency</td>
+          <td>Weekdays</td>
+        </tr>
+
+        <tr *ngFor="let corse of corses">
+          <td>
+            {{ this.corse.name }}
+          </td>
+          <td>{{ this.corse.proficiency }}</td>
+          <td>1</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

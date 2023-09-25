@@ -4,9 +4,15 @@ import { MainFitnessComponent } from './main-fitness/main-fitness.component';
 import { FitnessRoutingModule } from './fitness-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatarialModule } from '../material/matarial/matarial.module';
+import { ProgramsFitnessComponent } from './programs-fitness/programs-fitness.component';
+import { TrinersFitnessComponent } from './triners-fitness/triners-fitness.component';
 
 @NgModule({
-  declarations: [MainFitnessComponent],
+  declarations: [
+    MainFitnessComponent,
+    ProgramsFitnessComponent,
+    TrinersFitnessComponent,
+  ],
   imports: [
     CommonModule,
     MatarialModule,

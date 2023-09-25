@@ -1,0 +1,39 @@
+<div
+  class="container"
+  fxLayout
+  fxLayoutAlign="left"
+  fxLayoutGap="10px"
+  fxLayoutGap.xs="0"
+>
+  <div [routerLink]="['/fitfusion']" class="header logo fit-fusio" fxFlex="35%">
+    Fit Fusion
+  </div>
+
+  <button
+    routerLink="/fitfusion/programs"
+    class="border header item-2 nav-buttons"
+    mat-button
+  >
+    Services
+  </button>
+  <button
+    routerLink="/fitfusion/programs"
+    class="border header item-2 nav-buttons"
+    mat-button
+  >
+    Programs
+  </button>
+
+  <button
+    routerLink="/fitfusion/programs"
+    class="border header item-2 nav-buttons"
+    mat-button
+  >
+    Trainers
+  </button>
+  <div fxFlex="35%" class="rr">
+    <button mat-fab class="border item-2" color="prime" aria-label="Sight in">
+      <mat-icon>person</mat-icon>
+    </button>
+  </div>
+</div>

@@ -6,14 +6,34 @@
     fxLayoutGap="10px"
     fxLayoutGap.xs="0"
   >
-    <div class="header logo fit-fusio" fxFlex="35%">Fit Fusion</div>
-    <button class="border header item-2 nav-buttons" mat-button>
+    <div
+      [routerLink]="['/fitfusion']"
+      class="header logo fit-fusio"
+      fxFlex="35%"
+    >
+      Fit Fusion
+    </div>
+
+    <button
+      routerLink="/fitfusion/programs"
+      class="border header item-2 nav-buttons"
+      mat-button
+    >
       Services
     </button>
-    <button class="border header item-2 nav-buttons" mat-button>
+    <button
+      routerLink="/fitfusion/programs"
+      class="border header item-2 nav-buttons"
+      mat-button
+    >
       Programs
     </button>
-    <button class="border header item-2 nav-buttons" mat-button>
+
+    <button
+      routerLink="/fitfusion/programs"
+      class="border header item-2 nav-buttons"
+      mat-button
+    >
       Trainers
     </button>
     <div fxFlex="35%" class="rr">
@@ -34,7 +54,7 @@
         <div class="motivatio">Get Fit Now!</div>
         <div class="motivatio-sub-text">
           Are you ready to transform your life and achieve your fitness goals
-          like never before? Try our worckout plas for free.<br />
+          like never before? Try our workout plans for free.<br />
         </div>
         <div>
           <button
@@ -69,7 +89,7 @@
     </div>
     <div fxFlex="30%" class="border item-2">
       <div class="item-5">
-        <h1>Fitness Schedules</h1>
+        <h1>Fitness Programs</h1>
       </div>
       <div class="item-5 overline underline">
         <a>CrossFit -></a><br />

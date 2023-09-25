@@ -16,7 +16,7 @@ export class ProgramsFitnessComponent {
           exercise: {
             name: 'Warm up day',
             description: 'A day to get the week a good start',
-            ing: '',
+            ing: 'assets\\img\\plan2.jpg',
             score: 1,
           },
           weekDay: 'Sunday',

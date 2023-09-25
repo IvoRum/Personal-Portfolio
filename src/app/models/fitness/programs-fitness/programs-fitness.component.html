@@ -49,26 +49,26 @@
     fxLayoutGap="10px"
     fxLayoutGap.xs="0"
   >
-    <div fxFlex="20%" class="item-1">
-      <img class="fitured-blog" src="assets\img\plan1.jpg" />
-    </div>
-    <div fxFlex="66%" class="item-1">
-      <h1>Programs</h1>
-      <table class="item-2">
-        <tr>
-          <td>Name</td>
-          <td>Proficiency</td>
-          <td>Weekdays</td>
-        </tr>
+    <div
+      fxFlex="42%"
+      fxFlex.xs="100%"
+      fxFlex.sm="33%"
+      *ngFor="let corse of corses"
+    >
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title class="" routerLink="">{{
+            corse.name
+          }}</mat-card-title>
 
-        <tr *ngFor="let corse of corses">
-          <td>
-            {{ this.corse.name }}
-          </td>
-          <td>{{ this.corse.proficiency }}</td>
-          <td>1</td>
-        </tr>
-      </table>
+          <mat-card-subtitle>Level: beginner</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          class="fitured-blog"
+          mat-card-image
+          src="{{ corse.exercises[0].exercise.ing }}"
+        />
+      </mat-card>
     </div>
   </div>
 </div>

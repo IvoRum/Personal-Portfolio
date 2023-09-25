@@ -221,3 +221,8 @@ td {
   padding: 10px;
   color: #ffffff; /* Text color for cells */
 }
+
+.profilemain {
+  height: 100%;
+  background: linear-gradient(to top left, #fbe4d8, #959ac1);
+}

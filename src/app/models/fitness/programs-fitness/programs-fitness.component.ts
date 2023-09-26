@@ -9,7 +9,7 @@ import { Course } from '../dto/Course';
 export class ProgramsFitnessComponent {
   corses: Course[] = [
     {
-      name: '🧘 Standert Yoga',
+      name: '🧘 Standard Yoga',
       proficiency: 1,
       exercises: [
         {

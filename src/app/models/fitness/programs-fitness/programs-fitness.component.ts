@@ -23,5 +23,50 @@ export class ProgramsFitnessComponent {
         },
       ],
     },
+    {
+      name: '5 Day Womans Workout Routine',
+      proficiency: 1,
+      exercises: [
+        {
+          exercise: {
+            name: 'Warm up day',
+            description: 'A day to get the week a good start',
+            ing: 'assets\\img\\plan3.jpg',
+            score: 1,
+          },
+          weekDay: 'Sunday',
+        },
+      ],
+    },
+    {
+      name: `Men's Gymnastics`,
+      proficiency: 1,
+      exercises: [
+        {
+          exercise: {
+            name: 'Warm up day',
+            description: 'A day to get the week a good start',
+            ing: 'assets\\img\\plan4.jpg',
+            score: 1,
+          },
+          weekDay: 'Sunday',
+        },
+      ],
+    },
+    {
+      name: `Men's Crossfit`,
+      proficiency: 1,
+      exercises: [
+        {
+          exercise: {
+            name: 'Warm up day',
+            description: 'A day to get the week a good start',
+            ing: 'assets\\img\\plan5.jpg',
+            score: 1,
+          },
+          weekDay: 'Sunday',
+        },
+      ],
+    },
   ];
 }

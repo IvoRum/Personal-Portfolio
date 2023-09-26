@@ -94,6 +94,10 @@ a {
   background-color: #ffffff;
 }
 
+.item-black {
+  background-color: #35a29e17;
+}
+
 .frost-1 {
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -148,6 +152,7 @@ a {
 }
 
 .black-tint-img {
+  background-image: url("back.jpg");
   background-color: #0000003b;
   background-repeat: no-repeat;
   background-size: cover;
@@ -158,6 +163,7 @@ a {
 }
 
 .motivatio {
+  padding-top: 2em;
   font-family: Oswald, sans-serif;
   font-size: 3.7em;
   line-height: 1.1em;
@@ -165,8 +171,7 @@ a {
   color: #ffffff;
   text-decoration: none;
   text-transform: none;
-  text-align: left;
-  text-decoration: underline;
+  text-align: center;
   padding-bottom: 25px;
 }
 
@@ -225,4 +230,16 @@ td {
 .profilemain {
   height: 100%;
   background: linear-gradient(to top left, #fbe4d8, #959ac1);
+}
+
+.bold-banner-text {
+  font-family: Oswald, sans-serif;
+  color: #ffffff;
+  font-size: 2em;
+  line-height: 1em;
+  text-align: center;
+  font-style: bold;
+  text-decoration: none;
+  text-transform: none;
+  padding-bottom: 10%;
 }

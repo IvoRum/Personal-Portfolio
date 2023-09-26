@@ -34,7 +34,7 @@ export class ProjectCardComponent {
     {
       name: 'TicketFlow',
       description:
-        'Is an all-in-one solution for seamless ticketing, queue management, and reservations.',
+        'Is an all-in-one solution for seamless ticketing, queue management and reservations.',
       img: 'https://cdn.dribbble.com/userupload/5516257/file/original-915761691430db03304277e819801011.png?resize=1024x768&vertical=center',
       link: 'ticketFlow',
       class: 'profilemain',

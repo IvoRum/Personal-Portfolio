@@ -1,5 +1,8 @@
-import { Client } from "./Client";
+import { Client } from './Client';
 
-export interface Trainer{
-    clients:Client[];
+export interface Trainer {
+  name: string;
+  score: number;
+  clients: Client[];
+  img: string;
 }

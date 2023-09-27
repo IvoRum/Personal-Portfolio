@@ -1,7 +1,7 @@
-import { Course } from "./Course";
+import { Course } from './Course';
 
-export interface Client{
-    name: string,
-    email: string;
-    course: Course;
+export interface Client {
+  name: string;
+  email: string;
+  course: Course | null;
 }

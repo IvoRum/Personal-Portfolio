@@ -1,0 +1,804 @@
+{
+  "details": {
+    "Vrvirksomhed": {
+      "cvrNummer": 10150817,
+      "regNummer": [],
+      "brancheAnsvarskode": 15,
+      "reklamebeskyttet": false,
+      "navne": [
+        {
+          "navn": "Erhvervs- og Selskabsstyrelsen",
+          "periode": {
+            "gyldigFra": "1964-04-01",
+            "gyldigTil": "2011-12-31"
+          },
+          "sidstOpdateret": "2013-11-22T22:09:56.000+01:00"
+        },
+        {
+          "navn": "Erhvervsstyrelsen",
+          "periode": {
+            "gyldigFra": "2012-01-01"
+          },
+          "sidstOpdateret": "2011-12-13T09:01:33.000+01:00"
+        }
+      ],
+      "binavne": [],
+      "postadresse": [
+        {
+          "landekode": "DK",
+          "kommune": {
+            "kommuneKode": 101,
+            "kommuneNavn": "KØBENHAVN",
+            "periode": {
+              "gyldigFra": "2007-01-01"
+            },
+            "sidstOpdateret": "2006-11-13T00:00:00.000+01:00"
+          },
+          "husnummerFra": 1,
+          "vejnavn": "Kampmannsgade",
+          "postnummer": 1780,
+          "postdistrikt": "København V",
+          "periode": {
+            "gyldigFra": "1964-04-01",
+            "gyldigTil": "2012-12-11"
+          },
+          "sidstOpdateret": "2013-11-22T22:40:23.000+01:00"
+        },
+        {
+          "landekode": "DK",
+          "vejkode": 4143,
+          "kommune": {
+            "kommuneKode": 101,
+            "kommuneNavn": "KØBENHAVN",
+            "periode": {
+              "gyldigFra": "2007-01-01"
+            },
+            "sidstOpdateret": "2006-11-13T00:00:00.000+01:00"
+          },
+          "husnummerFra": 17,
+          "vejnavn": "Langelinie Allé",
+          "postnummer": 2100,
+          "postdistrikt": "København Ø",
+          "periode": {
+            "gyldigFra": "2012-12-12"
+          },
+          "sidstOpdateret": "2012-12-12T10:50:16.000+01:00"
+        }
+      ],
+      "beliggenhedsadresse": [
+        {
+          "landekode": "DK",
+          "vejkode": 3540,
+          "kommune": {
+            "kommuneKode": 101,
+            "kommuneNavn": "KØBENHAVN",
+            "periode": {
+              "gyldigFra": "2007-01-01"
+            },
+            "sidstOpdateret": "2006-11-13T00:00:00.000+01:00"
+          },
+          "husnummerFra": 1,
+          "vejnavn": "Kampmannsgade",
+          "postnummer": 1604,
+          "postdistrikt": "København V",
+          "periode": {
+            "gyldigFra": "1964-04-01",
+            "gyldigTil": "2012-06-24"
+          },
+          "sidstOpdateret": "2013-11-22T22:40:23.000+01:00"
+        },
+        {
+          "landekode": "DK",
+          "vejkode": 4143,
+          "kommune": {
+            "kommuneKode": 101,
+            "kommuneNavn": "KØBENHAVN",
+            "periode": {
+              "gyldigFra": "2007-01-01"
+            },
+            "sidstOpdateret": "2006-11-13T00:00:00.000+01:00"
+          },
+          "husnummerFra": 17,
+          "adresseId": "9ccc4f1d-2470-4f2f-a40e-17daacabd038",
+          "sidstValideret": "2020-02-19T17:36:47.125+01:00",
+          "vejnavn": "Langelinie Allé",
+          "postnummer": 2100,
+          "postdistrikt": "København Ø",
+          "periode": {
+            "gyldigFra": "2012-06-25"
+          },
+          "sidstOpdateret": "2012-06-28T12:12:00.000+02:00"
+        }
+      ],
+      "telefonNummer": [
+        {
+          "kontaktoplysning": "33307700",
+          "hemmelig": true,
+          "periode": {
+            "gyldigFra": "1964-04-01",
+            "gyldigTil": "2003-05-07"
+          },
+          "sidstOpdateret": "2013-11-22T22:14:39.000+01:00"
+        },
+        {
+          "kontaktoplysning": "35291000",
+          "hemmelig": false,
+          "periode": {
+            "gyldigFra": "2003-11-24"
+          },
+          "sidstOpdateret": "2012-06-28T12:12:01.000+02:00"
+        }
+      ],
+      "telefaxNummer": [
+        {
+          "kontaktoplysning": "33307799",
+          "hemmelig": true,
+          "periode": {
+            "gyldigFra": "1964-04-01",
+            "gyldigTil": "2003-05-07"
+          },
+          "sidstOpdateret": "2013-11-22T22:14:39.000+01:00"
+        }
+      ],
+      "sekundaertTelefonNummer": [],
+      "sekundaertTelefaxNummer": [],
+      "elektroniskPost": [
+        {
+          "kontaktoplysning": "eogs@eogs.dk",
+          "hemmelig": true,
+          "periode": {
+            "gyldigFra": "1964-04-01",
+            "gyldigTil": "2003-05-07"
+          },
+          "sidstOpdateret": "2013-11-22T22:14:39.000+01:00"
+        }
+      ],
+      "hjemmeside": [],
+      "obligatoriskEmail": [],
+      "livsforloeb": [
+        {
+          "periode": {
+            "gyldigFra": "1964-04-01"
+          },
+          "sidstOpdateret": "2007-05-21T13:42:48.000+02:00"
+        }
+      ],
+      "hovedbranche": [
+        {
+          "branchekode": "751300",
+          "branchetekst": "Offentlig administration vedrørende erhverv, infrastruktur mv.",
+          "periode": {
+            "gyldigFra": "1964-04-01",
+            "gyldigTil": "2007-12-31"
+          },
+          "sidstOpdateret": "2013-11-22T22:19:29.000+01:00"
+        },
+        {
+          "branchekode": "841300",
+          "branchetekst": "Administration af og bidrag til erhvervsfremme",
+          "periode": {
+            "gyldigFra": "2008-01-01"
+          },
+          "sidstOpdateret": "2007-12-27T23:19:33.000+01:00"
+        }
+      ],
+      "bibranche1": [],
+      "bibranche2": [],
+      "bibranche3": [],
+      "status": [],
+      "virksomhedsstatus": [],
+      "virksomhedsform": [
+        {
+          "virksomhedsformkode": 230,
+          "kortBeskrivelse": "STA",
+          "langBeskrivelse": "Statslig administrativ enhed",
+          "ansvarligDataleverandoer": "DST",
+          "periode": {
+            "gyldigFra": "1964-04-01"
+          },
+          "sidstOpdateret": "2013-11-22T21:57:52.000+01:00"
+        }
+      ],
+      "aarsbeskaeftigelse": [
+        {
+          "aar": 2001,
+          "sidstOpdateret": "2003-05-12T19:30:17.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        {
+          "aar": 2002,
+          "sidstOpdateret": "2004-06-25T19:50:58.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199",
+          "intervalKodeAntalAnsatte": "ANTAL_100_199"
+        },
+        {
+          "aar": 2003,
+          "sidstOpdateret": "2005-12-02T20:06:30.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199",
+          "intervalKodeAntalAnsatte": "ANTAL_100_199"
+        },
+        {
+          "aar": 2004,
+          "sidstOpdateret": "2006-05-18T19:33:44.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        {
+          "aar": 2005,
+          "sidstOpdateret": "2007-07-18T15:45:42.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        {
+          "aar": 2006,
+          "sidstOpdateret": "2008-10-03T14:45:21.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        {
+          "aar": 2007,
+          "sidstOpdateret": "2009-09-08T14:46:48.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        {
+          "aar": 2008,
+          "sidstOpdateret": "2010-10-14T14:43:04.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        {
+          "aar": 2009,
+          "sidstOpdateret": "2011-11-30T14:43:12.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        {
+          "aar": 2011,
+          "sidstOpdateret": "2013-07-18T15:00:25.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        {
+          "aar": 2012,
+          "sidstOpdateret": "2015-02-26T13:13:04.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        }
+      ],
+      "kvartalsbeskaeftigelse": [
+        {
+          "aar": 2000,
+          "kvartal": 1,
+          "sidstOpdateret": "2001-10-11T19:47:20.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2000,
+          "kvartal": 2,
+          "sidstOpdateret": "2001-10-11T20:04:26.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2000,
+          "kvartal": 3,
+          "sidstOpdateret": "2001-10-11T20:21:00.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2000,
+          "kvartal": 4,
+          "sidstOpdateret": "2001-10-12T19:45:38.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2001,
+          "kvartal": 1,
+          "sidstOpdateret": "2001-10-11T20:36:51.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2001,
+          "kvartal": 2,
+          "sidstOpdateret": "2002-02-01T19:46:25.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2001,
+          "kvartal": 3,
+          "sidstOpdateret": "2002-04-22T19:47:37.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2001,
+          "kvartal": 4,
+          "sidstOpdateret": "2002-05-24T19:46:43.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2002,
+          "kvartal": 1,
+          "sidstOpdateret": "2002-09-24T19:45:09.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2002,
+          "kvartal": 2,
+          "sidstOpdateret": "2002-12-05T19:44:55.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2002,
+          "kvartal": 3,
+          "sidstOpdateret": "2003-03-13T19:49:24.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2002,
+          "kvartal": 4,
+          "sidstOpdateret": "2003-05-21T20:18:00.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2003,
+          "kvartal": 1,
+          "sidstOpdateret": "2003-09-11T21:51:04.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2003,
+          "kvartal": 2,
+          "sidstOpdateret": "2003-12-15T19:41:59.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2003,
+          "kvartal": 3,
+          "sidstOpdateret": "2004-03-11T19:42:28.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2003,
+          "kvartal": 4,
+          "sidstOpdateret": "2004-06-25T19:42:13.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2004,
+          "kvartal": 1,
+          "sidstOpdateret": "2004-12-02T19:50:59.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2004,
+          "kvartal": 2,
+          "sidstOpdateret": "2004-12-02T20:10:27.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_100_199"
+        },
+        {
+          "aar": 2004,
+          "kvartal": 3,
+          "sidstOpdateret": "2005-04-19T19:38:13.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2004,
+          "kvartal": 4,
+          "sidstOpdateret": "2005-10-04T14:49:46.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2005,
+          "kvartal": 1,
+          "sidstOpdateret": "2005-10-04T19:31:46.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2005,
+          "kvartal": 2,
+          "sidstOpdateret": "2005-12-02T19:56:17.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2005,
+          "kvartal": 3,
+          "sidstOpdateret": "2006-04-11T19:32:12.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2005,
+          "kvartal": 4,
+          "sidstOpdateret": "2006-09-01T14:45:07.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2006,
+          "kvartal": 1,
+          "sidstOpdateret": "2007-01-11T19:32:37.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2006,
+          "kvartal": 2,
+          "sidstOpdateret": "2007-01-12T13:45:42.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2006,
+          "kvartal": 3,
+          "sidstOpdateret": "2007-07-18T16:12:14.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2006,
+          "kvartal": 4,
+          "sidstOpdateret": "2007-09-03T12:03:58.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2007,
+          "kvartal": 1,
+          "sidstOpdateret": "2007-09-03T13:14:16.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2007,
+          "kvartal": 2,
+          "sidstOpdateret": "2008-02-29T11:23:07.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2007,
+          "kvartal": 3,
+          "sidstOpdateret": "2008-03-27T11:15:36.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2007,
+          "kvartal": 4,
+          "sidstOpdateret": "2008-07-03T10:43:44.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2008,
+          "kvartal": 1,
+          "sidstOpdateret": "2008-08-29T14:44:27.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2008,
+          "kvartal": 2,
+          "sidstOpdateret": "2008-12-16T14:45:03.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2008,
+          "kvartal": 3,
+          "sidstOpdateret": "2009-03-02T19:31:49.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2008,
+          "kvartal": 4,
+          "sidstOpdateret": "2009-06-11T14:45:53.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2009,
+          "kvartal": 1,
+          "sidstOpdateret": "2009-09-02T14:46:40.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2009,
+          "kvartal": 2,
+          "sidstOpdateret": "2010-01-07T14:56:13.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2009,
+          "kvartal": 3,
+          "sidstOpdateret": "2010-03-11T14:57:15.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2009,
+          "kvartal": 4,
+          "sidstOpdateret": "2010-09-22T14:43:04.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2010,
+          "kvartal": 1,
+          "sidstOpdateret": "2010-09-23T14:43:08.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2010,
+          "kvartal": 2,
+          "sidstOpdateret": "2010-11-30T14:43:08.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2010,
+          "kvartal": 3,
+          "sidstOpdateret": "2011-03-31T19:30:11.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2010,
+          "kvartal": 4,
+          "sidstOpdateret": "2011-06-23T14:43:06.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2011,
+          "kvartal": 1,
+          "sidstOpdateret": "2012-03-13T13:27:26.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2011,
+          "kvartal": 2,
+          "sidstOpdateret": "2012-03-16T10:46:45.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2011,
+          "kvartal": 3,
+          "sidstOpdateret": "2012-05-11T14:43:04.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2011,
+          "kvartal": 4,
+          "sidstOpdateret": "2012-09-04T14:43:04.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2012,
+          "kvartal": 1,
+          "sidstOpdateret": "2012-10-17T19:30:05.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2012,
+          "kvartal": 2,
+          "sidstOpdateret": "2013-03-18T14:43:05.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2012,
+          "kvartal": 3,
+          "sidstOpdateret": "2013-04-29T14:43:05.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2012,
+          "kvartal": 4,
+          "sidstOpdateret": "2013-07-18T14:43:25.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499"
+        },
+        {
+          "aar": 2013,
+          "kvartal": 1,
+          "sidstOpdateret": "2013-10-09T14:43:09.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999"
+        },
+        {
+          "aar": 2013,
+          "kvartal": 2,
+          "sidstOpdateret": "2014-01-23T21:23:55.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999"
+        },
+        {
+          "aar": 2013,
+          "kvartal": 3,
+          "sidstOpdateret": "2014-04-04T22:21:19.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999"
+        },
+        {
+          "aar": 2013,
+          "kvartal": 4,
+          "sidstOpdateret": "2015-02-26T13:15:06.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999",
+          "intervalKodeAntalAnsatte": "ANTAL_500_999"
+        },
+        {
+          "aar": 2014,
+          "kvartal": 1,
+          "sidstOpdateret": "2014-10-21T22:26:37.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999"
+        },
+        {
+          "aar": 2014,
+          "kvartal": 2,
+          "sidstOpdateret": "2014-12-15T21:31:40.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999"
+        }
+      ],
+      "maanedsbeskaeftigelse": [
+        {
+          "aar": 2014,
+          "maaned": 1,
+          "sidstOpdateret": "2015-02-26T13:19:01.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999",
+          "intervalKodeAntalAnsatte": "ANTAL_500_999"
+        }
+      ],
+      "erstMaanedsbeskaeftigelse": [
+        {
+          "aar": 2019,
+          "maaned": 11,
+          "antalAarsvaerk": 666.85,
+          "antalAnsatte": 712,
+          "sidstOpdateret": "2020-02-19T08:27:23.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999",
+          "intervalKodeAntalAnsatte": "ANTAL_500_999"
+        },
+        {
+          "aar": 2020,
+          "maaned": 1,
+          "antalAarsvaerk": 9,
+          "antalAnsatte": 18,
+          "sidstOpdateret": "2020-03-30T13:51:17.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_5_9",
+          "intervalKodeAntalAnsatte": "ANTAL_10_19"
+        }
+      ],
+      "attributter": [],
+      "penheder": [
+        {
+          "pNummer": 1008153546,
+          "periode": {
+            "gyldigFra": "1964-04-01",
+            "gyldigTil": "2000-12-31"
+          },
+          "sidstOpdateret": "2000-12-21T21:22:48.000+01:00"
+        },
+        {
+          "pNummer": 1003407806,
+          "periode": {
+            "gyldigFra": "1993-01-01"
+          },
+          "sidstOpdateret": "2008-01-09T12:13:14.000+01:00"
+        },
+        {
+          "pNummer": 1014085897,
+          "periode": {
+            "gyldigFra": "2001-01-01",
+            "gyldigTil": "2006-12-07"
+          },
+          "sidstOpdateret": "2009-08-17T15:04:51.000+02:00"
+        },
+        {
+          "pNummer": 1012831710,
+          "periode": {
+            "gyldigFra": "2006-12-08",
+            "gyldigTil": "2006-12-08"
+          },
+          "sidstOpdateret": "2007-05-30T14:12:58.000+02:00"
+        },
+        {
+          "pNummer": 1017951463,
+          "periode": {
+            "gyldigFra": "2012-09-25"
+          },
+          "sidstOpdateret": "2012-09-25T15:35:44.000+02:00"
+        },
+        {
+          "pNummer": 1018835963,
+          "periode": {
+            "gyldigFra": "2013-10-01",
+            "gyldigTil": "2015-02-28"
+          },
+          "sidstOpdateret": "2015-03-18T11:17:12.000+01:00"
+        },
+        {
+          "pNummer": 1018836250,
+          "periode": {
+            "gyldigFra": "2013-10-21",
+            "gyldigTil": "2013-10-21"
+          },
+          "sidstOpdateret": "2013-10-21T17:25:21.000+02:00"
+        }
+      ],
+      "deltagerRelation": [],
+      "fusioner": [],
+      "spaltninger": [],
+      "virksomhedMetadata": {
+        "nyesteNavn": {
+          "navn": "Erhvervsstyrelsen",
+          "periode": {
+            "gyldigFra": "2012-01-01"
+          },
+          "sidstOpdateret": "2011-12-13T09:01:33.000+01:00"
+        },
+        "nyesteBinavne": [],
+        "nyesteVirksomhedsform": {
+          "virksomhedsformkode": 230,
+          "kortBeskrivelse": "STA",
+          "langBeskrivelse": "Statslig administrativ enhed",
+          "ansvarligDataleverandoer": "DST",
+          "periode": {
+            "gyldigFra": "1964-04-01"
+          },
+          "sidstOpdateret": "2013-11-22T21:57:52.000+01:00"
+        },
+        "nyesteBeliggenhedsadresse": {
+          "landekode": "DK",
+          "vejkode": 4143,
+          "kommune": {
+            "kommuneKode": 101,
+            "kommuneNavn": "KØBENHAVN",
+            "periode": {
+              "gyldigFra": "2007-01-01"
+            },
+            "sidstOpdateret": "2006-11-13T00:00:00.000+01:00"
+          },
+          "husnummerFra": 17,
+          "adresseId": "9ccc4f1d-2470-4f2f-a40e-17daacabd038",
+          "sidstValideret": "2020-02-19T17:36:47.125+01:00",
+          "vejnavn": "Langelinie Allé",
+          "postnummer": 2100,
+          "postdistrikt": "København Ø",
+          "periode": {
+            "gyldigFra": "2012-06-25"
+          },
+          "sidstOpdateret": "2012-06-28T12:12:00.000+02:00"
+        },
+        "nyesteHovedbranche": {
+          "branchekode": "841300",
+          "branchetekst": "Administration af og bidrag til erhvervsfremme",
+          "periode": {
+            "gyldigFra": "2008-01-01"
+          },
+          "sidstOpdateret": "2007-12-27T23:19:33.000+01:00"
+        },
+        "nyesteKontaktoplysninger": ["35291000"],
+        "antalPenheder": 2,
+        "nyesteAarsbeskaeftigelse": {
+          "aar": 2012,
+          "sidstOpdateret": "2015-02-26T13:13:04.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_200_499",
+          "intervalKodeAntalAnsatte": "ANTAL_200_499"
+        },
+        "nyesteKvartalsbeskaeftigelse": {
+          "aar": 2014,
+          "kvartal": 2,
+          "sidstOpdateret": "2014-12-15T21:31:40.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999"
+        },
+        "nyesteMaanedsbeskaeftigelse": {
+          "aar": 2014,
+          "maaned": 1,
+          "sidstOpdateret": "2015-02-26T13:19:01.000+01:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_500_999",
+          "intervalKodeAntalAnsatte": "ANTAL_500_999"
+        },
+        "nyesteErstMaanedsbeskaeftigelse": {
+          "aar": 2020,
+          "maaned": 1,
+          "antalAarsvaerk": 9,
+          "antalAnsatte": 18,
+          "sidstOpdateret": "2020-03-30T13:51:17.000+02:00",
+          "intervalKodeAntalAarsvaerk": "ANTAL_5_9",
+          "intervalKodeAntalAnsatte": "ANTAL_10_19"
+        },
+        "sammensatStatus": "Aktiv",
+        "stiftelsesDato": "1964-04-01",
+        "virkningsDato": "1964-04-01"
+      },
+      "samtId": 30,
+      "fejlRegistreret": false,
+      "dataAdgang": 0,
+      "enhedsNummer": 4001304412,
+      "enhedstype": "VIRKSOMHED",
+      "sidstIndlaest": "2020-03-30T13:58:46.193+02:00",
+      "sidstOpdateret": "2015-03-18T11:17:12.000+01:00",
+      "fejlVedIndlaesning": false,
+      "virkningsAktoer": "BT"
+    }
+  }
+}

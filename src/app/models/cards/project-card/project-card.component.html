@@ -25,6 +25,24 @@
             src="{{ card.img }}"
             routerLink="/{{ card.link }}"
           />
+          <div *ngIf="card.buttons1">
+            <button mat-fab color="primary">
+              <img
+                class="profile"
+                mat-card-image
+                src="{{ card.buttons1 }}"
+                routerLink="/{{ card.link }}"
+              />
+            </button>
+            <button mat-fab color="primary">
+              <img
+                class="profile"
+                mat-card-image
+                src="{{ card.buttons2 }}"
+                routerLink="/{{ card.link }}"
+              />
+            </button>
+          </div>
         </mat-card>
       </div>
     </div>

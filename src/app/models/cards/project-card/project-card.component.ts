@@ -26,6 +26,8 @@ export class ProjectCardComponent {
       img: '',
       class: 'title hello-card',
       titleclass: 'title',
+      buttons1: 'github.jpg',
+      buttons2: 'linkedin.png',
     },
     {
       img: 'assets/img/CropIvo2.png',

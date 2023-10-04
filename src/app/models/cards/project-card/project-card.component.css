@@ -1,15 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
 .hello-card {
   padding: 2%;
   height: 100%;
   /* background: linear-gradient(to top left, #fbe4d8, #854f5c); */
   background: linear-gradient(to top left, #fbe4d8, #959ac1);
 }
+.hello-decription {
+  padding-top: 10px;
+  font-family: "Gill Sans", sans-serif;
+  font-size: xx-large;
+  color: black;
+  line-height: 1.2;
+}
 .headshot-card {
 }
 .title {
   /*font-family: Georgia, Times New Roman, serif;*/
-  font-family: Verdana, Arial, Helvetica, sans-serif;
-  font-size: 38px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 42px;
+
   line-height: 1.2;
 }
 
@@ -39,8 +49,19 @@
   background: linear-gradient(to top left, #fbe4d8, #959ac1);
   background-image: "./localAssets/CropIvo2.png";
 }
+.button-img {
+  width: 75%;
+}
 
 .profilemain {
   height: 100%;
   background: linear-gradient(to top left, #fbe4d8, #959ac1);
+}
+
+.header {
+  height: 2em;
+}
+
+.header-button {
+  height: 2em;
 }

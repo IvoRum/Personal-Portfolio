@@ -1,4 +1,8 @@
 <div class="card-holder" fxLayout="row wrap" fxLayoutGap="20px">
+  <div class="header">
+    <button fxFlex="42%" mat-button>Home</button>
+    <button fxFlex="42%" mat-button>Blog</button>
+  </div>
   <div class="project-card">
     <div fxLayout="row wrap" fxLayoutGap="10px grid">
       <div
@@ -15,9 +19,11 @@
               >{{ card.name }}</mat-card-title
             >
 
-            <mat-card-subtitle routerLink="/{{ card.link }}">{{
-              card.description
-            }}</mat-card-subtitle>
+            <mat-card-subtitle
+              class="{{ card.descriptionClass }}"
+              routerLink="/{{ card.link }}"
+              >{{ card.description }}</mat-card-subtitle
+            >
           </mat-card-header>
           <img
             class="profile"
@@ -28,7 +34,7 @@
           <div *ngIf="card.buttons1">
             <button mat-fab color="primary">
               <img
-                class="profile"
+                class="button-img"
                 mat-card-image
                 src="{{ card.buttons1 }}"
                 routerLink="/{{ card.link }}"
@@ -36,7 +42,7 @@
             </button>
             <button mat-fab color="primary">
               <img
-                class="profile"
+                class="button-img"
                 mat-card-image
                 src="{{ card.buttons2 }}"
                 routerLink="/{{ card.link }}"

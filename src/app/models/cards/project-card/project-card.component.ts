@@ -20,9 +20,10 @@ export class ProjectCardComponent {
   ];
   projectList = [
     {
-      name: '>Hello, World!',
+      name: '>Hello, World! I`m Ivo a software developer',
       description:
-        'Crafting Digital Excellence: Transforming Ideas into Engaging Websites.',
+        'Crafting Digital Excellence: Where Imagination Meets Innovation to Create Engaging Websites.',
+      descriptionClass: 'hello-decription',
       img: '',
       class: 'title hello-card',
       titleclass: 'title',
@@ -30,7 +31,7 @@ export class ProjectCardComponent {
       buttons2: 'assets\\img\\linkedin.png',
     },
     {
-      img: 'assets/img/CropIvo2.png',
+      img: 'assets/img/CropIvo3.png',
       class: 'profilemain',
     },
     {
@@ -45,7 +46,7 @@ export class ProjectCardComponent {
       name: 'FitFusion',
       description:
         'Is a direct line to personalized health and wellness. Train, plane and meal prep.',
-      img: 'https://cdn.dribbble.com/userupload/9070186/file/original-b976caf1433a73a00e9839621919a27e.png?resize=1024x768&vertical=center',
+      img: 'assets\\img\\fitfusion.png',
       link: 'fitfusion',
       class: 'profilemain',
     },

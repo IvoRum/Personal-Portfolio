@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Vertical Dashboard with White CSS Style</title>
+  <link rel="stylesheet" href="Style/dashboard.css">
+</head>
+
+<body>
+  <div class="sidebar">
+    <h1>Dashboard</h1>
+    <ul>
+      <li><a href="dashboard.html">Home</a></li>
+      <li><a href="Services.html">Services</a></li>
+      <li><a href="emplyees.html">Emplyees</a></li>
+      <li><a href="ticket.html">Tickets</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <h1>Ticket</h1>
+    <div class="container">
+      <div class="column" id="user-column">
+        <div class="userCard" onclick="location.href='add-new-ticket.html';">
+          Add new Ticket
+        </div>
+        <script src="skripts/ticket-data-table.js"></script>
+      </div>
+      <div class="column">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

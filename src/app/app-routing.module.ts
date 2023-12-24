@@ -9,6 +9,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./models/fitness/fitness.module').then((m) => m.FitnessModule),
   },
+  {
+    path: 'ticketflow',
+    loadChildren: () =>
+      import('./models/ticket-flow/ticket-flow.module').then(
+        (m) => m.TicketFlowModule
+      ),
+  },
   { path: '**', redirectTo: '' },
 ];
 @NgModule({

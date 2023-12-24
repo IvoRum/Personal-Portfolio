@@ -1,259 +1,303 @@
 <!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="hello.week.min.css" />
+<link rel="stylesheet" type="text/css" href="hello.week.theme.min.css" />
 <html>
+  <head>
+    <title>Vertical Dashboard with White CSS Style</title>
+    <link rel="stylesheet" href="Style/dashboard.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
 
-<head>
-  <title>Vertical Dashboard with White CSS Style</title>
-  <link rel="stylesheet" href="Style/dashboard.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</head>
-
-<body>
-
-  <div class="sidebar">
-    <h1>Dashboard</h1>
-    <ul>
-      <li><a href="dashboard.html">Home</a></li>
-      <li><a href="Services.html">Services</a></li>
-      <li><a href="emplyees.html">Emplyees</a></li>
-      <li><a href="ticket.html">Tickets</a></li>
-    </ul>
-  </div>
-  <div class="main">
-    <div class="grid-container">
-      <div class="grid-item" id="user-column">
-        <script src="skripts/emplyee-cards.js"></script>
-      </div>
-      <div class="grid-item" id="calendar">calendar
-
-        <body onload="displayCalendar()">
-          <h1>Calendar</h1>
-          <table>
-            <thead>
-              <tr>
-                <th colspan="7">
-                  <button onclick="previousMonth()">&lt;</button>
-                  <span id="month-year"></span>
-                  <button onclick="nextMonth()">&gt;</button>
-                </th>
-              </tr>
-              <tr>
-                <th>Sun</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thu</th>
-                <th>Fri</th>
-                <th>Sat</th>
-              </tr>
-            </thead>
-            <tbody id="calendar-body"></tbody>
-          </table>
-
-          <script>
-            var currentDate = new Date();
-            var currentMonth = currentDate.getMonth();
-            var currentYear = currentDate.getFullYear();
-
-            function displayCalendar() {
-              var firstDay = new Date(currentYear, currentMonth, 1);
-              var lastDay = new Date(currentYear, currentMonth + 1, 0);
-              var calendarBody = document.getElementById("calendar-body");
-              var monthYear = document.getElementById("month-year");
-
-              monthYear.innerHTML = getMonthName(currentMonth) + " " + currentYear;
-              calendarBody.innerHTML = "";
-
-              var date = 1;
-              for (var i = 0; i < 6; i++) {
-                var row = document.createElement("tr");
-                for (var j = 0; j < 7; j++) {
-                  if (i === 0 && j < firstDay.getDay()) {
-                    var cell = document.createElement("td");
-                    var cellText = document.createTextNode("");
-                    cell.appendChild(cellText);
-                    row.appendChild(cell);
-                  } else if (date > lastDay.getDate()) {
-                    break;
-                  } else {
-                    var cell = document.createElement("td");
-                    var cellText = document.createTextNode(date);
-                    if (date === currentDate.getDate() && currentMonth === currentDate.getMonth() && currentYear === currentDate.getFullYear()) {
-                      cell.classList.add("today");
-                    }
-                    cell.appendChild(cellText);
-                    row.appendChild(cell);
-                    date++;
-                  }
-                }
-                calendarBody.appendChild(row);
-              }
-            }
-
-            function previousMonth() {
-              if (currentMonth === 0) {
-                currentMonth = 11;
-                currentYear--;
-              } else {
-                currentMonth--;
-              }
-              displayCalendar();
-            }
-
-            function nextMonth() {
-              if (currentMonth === 11) {
-                currentMonth = 0;
-                currentYear++;
-              } else {
-                currentMonth++;
-              }
-              displayCalendar();
-            }
-
-            function getMonthName(month) {
-              var monthNames = ["January", "February", "March", "April", "May", "June",
-                "July", "August", "September", "October", "November", "December"];
-              return monthNames[month];
-            }
+  <body>
+    <div class="sidebar">
+      <h1>Dashboard</h1>
+      <ul>
+        <li><a href="dashboard.html">Home</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="emplyees.html">Emplyees</a></li>
+        <li><a href="ticket.html">Tickets</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <div class="grid-container">
+        <div class="grid-item" id="user-column">
+          <script src="skripts/emplyee-cards.js"></script>
+        </div>
+        <div class="grid-item" id="calendar">
+          <script type="module">
+            import HelloWeek from "hello.week.esm.js";
+            new HelloWeek();
           </script>
-        </body>
-      </div>
-      <div class="grid-item">
+          calendar
 
-        <h2>Prediction</h2>
-        <p id="result"></p>
-        <p>That a new client myght leave</p>
-      </div>
-      <div class="grid-item">
-        <h2>Dyopont points</h2>
-        <canvas id="lineChart"></canvas>
-        <script>
-          var chartData = {
-            labels: ["Jun", "Jul", "Aug"],
-            datasets: [
-              {
-                label: "Data",
-                data: [10, 5],
-                borderColor: "rgba(0, 123, 255, 1)",
-                fill: false
+          <body onload="displayCalendar()">
+            <h1>Calendar</h1>
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="7">
+                    <button onclick="previousMonth()">&lt;</button>
+                    <span id="month-year"></span>
+                    <button onclick="nextMonth()">&gt;</button>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Sun</th>
+                  <th>Mon</th>
+                  <th>Tue</th>
+                  <th>Wed</th>
+                  <th>Thu</th>
+                  <th>Fri</th>
+                  <th>Sat</th>
+                </tr>
+              </thead>
+              <tbody id="calendar-body"></tbody>
+            </table>
+
+            <script>
+              var currentDate = new Date();
+              var currentMonth = currentDate.getMonth();
+              var currentYear = currentDate.getFullYear();
+
+              function displayCalendar() {
+                var firstDay = new Date(currentYear, currentMonth, 1);
+                var lastDay = new Date(currentYear, currentMonth + 1, 0);
+                var calendarBody = document.getElementById("calendar-body");
+                var monthYear = document.getElementById("month-year");
+
+                monthYear.innerHTML =
+                  getMonthName(currentMonth) + " " + currentYear;
+                calendarBody.innerHTML = "";
+
+                var date = 1;
+                for (var i = 0; i < 6; i++) {
+                  var row = document.createElement("tr");
+                  for (var j = 0; j < 7; j++) {
+                    if (i === 0 && j < firstDay.getDay()) {
+                      var cell = document.createElement("td");
+                      var cellText = document.createTextNode("");
+                      cell.appendChild(cellText);
+                      row.appendChild(cell);
+                    } else if (date > lastDay.getDate()) {
+                      break;
+                    } else {
+                      var cell = document.createElement("td");
+                      var cellText = document.createTextNode(date);
+                      if (
+                        date === currentDate.getDate() &&
+                        currentMonth === currentDate.getMonth() &&
+                        currentYear === currentDate.getFullYear()
+                      ) {
+                        cell.classList.add("today");
+                      }
+                      cell.appendChild(cellText);
+                      row.appendChild(cell);
+                      date++;
+                    }
+                  }
+                  calendarBody.appendChild(row);
+                }
               }
-            ]
-          };
-          
-          var ctx = document.getElementById("lineChart").getContext("2d");
-          // create the chart
-          var lineChart = new Chart(ctx, {
-            type: "line",
-            data: chartData,
-            options: {
-              responsive: true
-            }
-          });
-        </script>
 
-      </div>
-      <div class="grid-item" id="pie-chart">
-        <h2>Tickets beeing drafted</h2>
-        <canvas id="myPieChart" width="10" height="10"></canvas>
-        <script>
-          let ticketNames = [];
-          let ticketValue = [];
-          const jwtToken1 = localStorage.getItem('jwtToken');
+              function previousMonth() {
+                if (currentMonth === 0) {
+                  currentMonth = 11;
+                  currentYear--;
+                } else {
+                  currentMonth--;
+                }
+                displayCalendar();
+              }
 
-          let headers1 = new Headers();
-          headers1.append('Authorization', `Bearer ${jwtToken1}`);
-          const response =
-            fetch('http://localhost:8080/api/v2/ticket', {
-              method: 'GET',
+              function nextMonth() {
+                if (currentMonth === 11) {
+                  currentMonth = 0;
+                  currentYear++;
+                } else {
+                  currentMonth++;
+                }
+                displayCalendar();
+              }
+
+              function getMonthName(month) {
+                var monthNames = [
+                  "January",
+                  "February",
+                  "March",
+                  "April",
+                  "May",
+                  "June",
+                  "July",
+                  "August",
+                  "September",
+                  "October",
+                  "November",
+                  "December",
+                ];
+                return monthNames[month];
+              }
+            </script>
+          </body>
+        </div>
+        <div class="grid-item">
+          <script type="module">
+            import HelloWeek from "hello.week.esm.js";
+            new HelloWeek();
+          </script>
+          <div class="hello-week">
+            <div class="navigation">
+              <button class="prev">Prev</button>
+              <div class="period"></div>
+              <button class="next">Next</button>
+            </div>
+            <div class="week"></div>
+            <div class="month"></div>
+          </div>
+        </div>
+        <div class="grid-item">
+          <h2>Prediction</h2>
+          <p id="result"></p>
+          <p>That a new client myght leave</p>
+        </div>
+        <div class="grid-item">
+          <h2>Dyopont points</h2>
+          <canvas id="lineChart"></canvas>
+          <script>
+            var chartData = {
+              labels: ["Jun", "Jul", "Aug"],
+              datasets: [
+                {
+                  label: "Data",
+                  data: [10, 5],
+                  borderColor: "rgba(0, 123, 255, 1)",
+                  fill: false,
+                },
+              ],
+            };
+
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            // create the chart
+            var lineChart = new Chart(ctx, {
+              type: "line",
+              data: chartData,
+              options: {
+                responsive: true,
+              },
+            });
+          </script>
+        </div>
+        <div class="grid-item" id="pie-chart">
+          <h2>Tickets beeing drafted</h2>
+          <canvas id="myPieChart" width="10" height="10"></canvas>
+          <script>
+            let ticketNames = [];
+            let ticketValue = [];
+            const jwtToken1 = localStorage.getItem("jwtToken");
+
+            let headers1 = new Headers();
+            headers1.append("Authorization", `Bearer ${jwtToken1}`);
+            const response = fetch("http://localhost:8080/api/v2/ticket", {
+              method: "GET",
               headers: headers1,
-            }).then(response => response.json())
-              .then(data => {
+            })
+              .then((response) => response.json())
+              .then((data) => {
                 console.log(data);
-                data.forEach(element => {
+                data.forEach((element) => {
                   ticketNames.push(element.name);
                   let ptCounter = 0;
-                  element.personalTickets.forEach(pt => {
+                  element.personalTickets.forEach((pt) => {
                     ptCounter++;
-                  })
+                  });
                   console.log(ptCounter);
                   ticketValue.push(ptCounter);
                 });
                 console.log(ticketNames);
                 console.log(ticketValue);
                 // get the canvas element
-                var ctx = document.getElementById("myPieChart").getContext("2d");
+                var ctx = document
+                  .getElementById("myPieChart")
+                  .getContext("2d");
                 // create the chart
                 var myChart = new Chart(ctx, {
-                  type: 'pie',
+                  type: "pie",
                   data: {
                     labels: ticketNames,
-                    datasets: [{
-                      label: 'Tickets finished',
-                      data: ticketValue,
-                      backgroundColor: ["rgb(255, 99, 132)", "rgb(54, 162, 235)", "rgb(255, 205, 86)"]
-                    }]
+                    datasets: [
+                      {
+                        label: "Tickets finished",
+                        data: ticketValue,
+                        backgroundColor: [
+                          "rgb(255, 99, 132)",
+                          "rgb(54, 162, 235)",
+                          "rgb(255, 205, 86)",
+                        ],
+                      },
+                    ],
                   },
-                  options: {}
+                  options: {},
                 });
               })
-              .catch(error => console.error(error));
-        </script>
-      </div>
-      <div class="grid-item" id="graph">
-        <h2>Counter work flow Grapth</h2>
-        <canvas id="myChart" width="10" height="10"></canvas>
-        <script>
-          let urerNames = [];
-          let userTickets = [];
+              .catch((error) => console.error(error));
+          </script>
+        </div>
+        <div class="grid-item" id="graph">
+          <h2>Counter work flow Grapth</h2>
+          <canvas id="myChart" width="10" height="10"></canvas>
+          <script>
+            let urerNames = [];
+            let userTickets = [];
 
-          const userResponse1 =
-            fetch('http://localhost:8080/api/v1/user', {
-              method: 'GET',
+            const userResponse1 = fetch("http://localhost:8080/api/v1/user", {
+              method: "GET",
               headers: headers,
-            }).then(userResponse1 => userResponse1.json())
-              .then(data => {
+            })
+              .then((userResponse1) => userResponse1.json())
+              .then((data) => {
                 console.log(data);
-                data.forEach(element => {
+                data.forEach((element) => {
                   let tickeCount = 0;
-                  element.personalTickets.forEach(pt => {
+                  element.personalTickets.forEach((pt) => {
                     tickeCount++;
-                  })
+                  });
                   userTickets.push(tickeCount);
-                  urerNames.push(element.firstname)
+                  urerNames.push(element.firstname);
                   console.log(element);
                 });
                 console.log(urerNames);
                 console.log(userTickets);
                 var ctx = document.getElementById("myChart").getContext("2d");
                 var myChart = new Chart(ctx, {
-                  type: 'line',
+                  type: "line",
                   data: {
                     labels: urerNames,
-                    datasets: [{
-                      label: "Finished personal tickets",
-                      data: userTickets,
-                      fill: false,
-                      borderColor: 'rgb(75, 192, 192)',
-                      borderColor: 'rgb(54, 162, 235)',
-                      tension: 0.1
-                    }]
+                    datasets: [
+                      {
+                        label: "Finished personal tickets",
+                        data: userTickets,
+                        fill: false,
+                        borderColor: "rgb(75, 192, 192)",
+                        borderColor: "rgb(54, 162, 235)",
+                        tension: 0.1,
+                      },
+                    ],
                   },
-                  options: {}
+                  options: {},
                 });
               })
-              .catch(error => console.error(error));
-        </script>
+              .catch((error) => console.error(error));
+          </script>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-<script>
-  window.onload = function () {
-    var min = 70;
-    var max = 100;
+  </body>
+  <script>
+    window.onload = function () {
+      var min = 70;
+      var max = 100;
 
-    var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
-    document.getElementById("result").innerHTML = randomNumber + "%";
-  };
-</script>
-
+      var randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+      document.getElementById("result").innerHTML = randomNumber + "%";
+    };
+  </script>
 </html>

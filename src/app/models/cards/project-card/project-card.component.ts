@@ -20,7 +20,7 @@ export class ProjectCardComponent {
   ];
   projectList = [
     {
-      name: '>Hello, World! I`m Ivo a software developer',
+      name: '>Hello, World!  \n I`m Ivo a software developer',
       description:
         'Crafting Digital Excellence: Where Imagination Meets Innovation to Create Engaging Websites.',
       descriptionClass: 'hello-decription',

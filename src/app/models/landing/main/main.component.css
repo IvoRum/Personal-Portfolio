@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Kanit";
+  src: url("/assets/fonts/Kanit/Kanit-Regular.ttf") format("truetype");
+}
 .card-holder {
   justify-content: center;
+  font-family: "Kanit";
 }

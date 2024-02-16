@@ -10,6 +10,11 @@ const routes: Routes = [
       import('./models/fitness/fitness.module').then((m) => m.FitnessModule),
   },
   {
+    path: 'newMain',
+    loadChildren: () =>
+      import('./models/landing/landing.module').then((m) => m.LandingModule),
+  },
+  {
     path: 'ticketflow',
     loadChildren: () =>
       import('./models/ticket-flow/ticket-flow.module').then(

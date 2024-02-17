@@ -22,19 +22,5 @@ export class MainComponent {
       cardColor: 'color1',
       textColor: 'tesxt color',
     },
-    {
-      title: 'Title1',
-      body: 'body1',
-      img: 'img1.png',
-      cardColor: 'color1',
-      textColor: 'tesxt color',
-    },
-    {
-      title: 'Title1',
-      body: 'body1',
-      img: 'img1.png',
-      cardColor: 'color1',
-      textColor: 'tesxt color',
-    },
   ];
 }

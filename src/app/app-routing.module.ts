@@ -3,11 +3,20 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProjectCardComponent } from './models/cards/project-card/project-card.component';
 
 const routes: Routes = [
-  { path: '', component: ProjectCardComponent },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./models/landing/landing.module').then((m) => m.LandingModule),
+  },
   {
     path: 'fitfusion',
     loadChildren: () =>
       import('./models/fitness/fitness.module').then((m) => m.FitnessModule),
+  },
+  {
+    path: 'newMain',
+    loadChildren: () =>
+      import('./models/landing/landing.module').then((m) => m.LandingModule),
   },
   {
     path: 'ticketflow',

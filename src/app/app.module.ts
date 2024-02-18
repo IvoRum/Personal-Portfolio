@@ -7,6 +7,7 @@ import { CardsModule } from './models/cards/cards.module';
 import { MatarialModule } from './models/material/matarial/matarial.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+
 @NgModule({
   declarations: [AppComponent],
   imports: [

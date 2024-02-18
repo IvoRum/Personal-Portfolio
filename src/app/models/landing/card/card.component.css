@@ -3,3 +3,7 @@
   max-height: 100%;
   border-radius: 25px;
 }
+
+.card-content {
+  cursor: pointer;
+}

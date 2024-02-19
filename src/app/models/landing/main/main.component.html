@@ -65,5 +65,21 @@
   fxLayout.xs="column"
   fxLayoutGap="20px"
 >
-  <app-card fxFlex="35%" *ngFor="let card of cards" [card]="card"></app-card>
+  <div class="img-box" fxFlex="35%">
+    <img
+      class="img"
+      mat-card-image
+      (click)="openTicketFlowDialog()"
+      src="assets\\img\\TicketFlow.png"
+    />
+  </div>
+  <div class="img-box" fxFlex="35%">
+    <img
+      class="img"
+      mat-card-image
+      (click)="openFitFusionDialog()"
+      src="assets\\img\\FitFusionNew.png"
+    />
+  </div>
+  <div class="buttons"></div>
 </div>

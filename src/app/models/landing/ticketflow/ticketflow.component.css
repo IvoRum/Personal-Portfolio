@@ -97,6 +97,7 @@ p {
 
 .dialog {
   font-family: "Karla";
+  height: 80%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,4 +140,46 @@ p {
 .period {
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+/* gallery.component.css */
+.gallery {
+  position: relative;
+}
+
+.image-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container img {
+  transition: transform 0.5s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+button:first-child {
+  left: 10px;
+}
+
+button:last-child {
+  right: 10px;
+}
+
+.title {
 }

@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-ticketflow',
-  templateUrl: './ticketflow.component.html',
-  styleUrls: ['./ticketflow.component.css'],
+  selector: 'app-fitfusion',
+  templateUrl: './fitfusion.component.html',
+  styleUrls: ['./fitfusion.component.css'],
 })
-export class TicketflowComponent {
-  images: string[] = ['assets\\img\\TicketFlowdAdmin.png'];
+export class FitfusionComponent {
+  images: string[] = [
+    'assets\\img\\TicketFlowdAdmin.png',
+    'assets\\img\\blog1.jpg',
+    'getfit.jpg',
+  ];
 
   currentIndex: number = 0;
 

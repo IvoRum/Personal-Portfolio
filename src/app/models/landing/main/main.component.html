@@ -1,4 +1,69 @@
 <app-header></app-header>
-<div class="card-holder wrap" fxLayout="row wrap" fxLayoutGap="40px">
-  <app-card fxFlex="32%" *ngFor="let card of cards" [card]="card"></app-card>
+<div class="introduction">
+  <div
+    class="img-box card-holder"
+    fxLayout="row wrap"
+    fxLayout.xs="column"
+    fxLayoutGap="20px"
+  >
+    <div class="discription card" fxFlex="45%">
+      <div class="text-card" fxLayout="column">
+        <h1 class="h-text" fxFlex="25%">
+          >Hello, World! I`m Ivo a software developer
+        </h1>
+        <p fxFlex="45%">
+          Crafting Digital Excellence: Where Imagination Meets Innovation to
+          Create Engaging Websites.
+        </p>
+        <div class="buttons" fxLayout="row wrap" fxLayoutGap="10px">
+          <button class="contact-butt" button>Contact me</button>
+          <button
+            class="fab-butt github"
+            onclick="window.open('https://github.com/IvoRum')"
+            mat-fab
+          >
+            <img
+              class="butt-img"
+              mat-card-image
+              src="assets\\img\\github1.png"
+            />
+          </button>
+          <button
+            class="fab-butt butt-color"
+            onclick="window.open('https://www.linkedin.com/in/ivaylo-rumenov-0671b7224/')"
+            mat-fab
+          >
+            <img
+              class="butt-img"
+              mat-card-image
+              src="assets\\img\\linkedin.png"
+              routerLink=""
+            />
+          </button>
+          <button
+            class="fab-butt butt-color"
+            onclick="window.open('https://dribbble.com/ivodadada')"
+            mat-fab
+          >
+            <img
+              class="butt-img"
+              mat-card-image
+              src="assets\\img\\dribble.png"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div fxFlex="25%" class="profile-pick">
+      <img class="img" mat-card-image src="assets\\img\\CropIvo5.png" />
+    </div>
+  </div>
+</div>
+<div
+  class="card-holder"
+  fxLayout="row wrap"
+  fxLayout.xs="column"
+  fxLayoutGap="20px"
+>
+  <app-card fxFlex="35%" *ngFor="let card of cards" [card]="card"></app-card>
 </div>

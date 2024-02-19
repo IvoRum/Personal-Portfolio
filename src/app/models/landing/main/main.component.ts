@@ -10,29 +10,15 @@ export class MainComponent {
   cards: PorjectCard[] = [
     {
       title: 'Ticket Flow',
-      body: 'A multy versital ticket system',
-      img: 'img1.png',
+      body: 'body1',
+      img: 'assets\\img\\TicketFlow.png',
       cardColor: 'color1',
       textColor: 'tesxt color',
     },
     {
       title: 'Fit Fusion',
-      body: '',
-      img: 'assets\\img\\fitfusion.png',
-      cardColor: 'color1',
-      textColor: 'tesxt color',
-    },
-    {
-      title: 'Title1',
       body: 'body1',
-      img: 'img1.png',
-      cardColor: 'color1',
-      textColor: 'tesxt color',
-    },
-    {
-      title: 'Title1',
-      body: 'body1',
-      img: 'img1.png',
+      img: 'assets\\img\\FitFusionNew.png',
       cardColor: 'color1',
       textColor: 'tesxt color',
     },

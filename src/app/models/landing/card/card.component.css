@@ -1,0 +1,13 @@
+.card-content {
+  background: linear-gradient(to top left, #ffffff, #959ac1);
+  border-radius: 1em;
+}
+
+.title {
+  font-size: xx-large;
+}
+
+.img {
+  max-height: 100%;
+  max-width: 100%;
+}

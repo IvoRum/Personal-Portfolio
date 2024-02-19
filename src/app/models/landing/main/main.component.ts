@@ -9,16 +9,16 @@ import { PorjectCard } from '../domain/ProjectCard';
 export class MainComponent {
   cards: PorjectCard[] = [
     {
-      title: 'Title1',
-      body: 'body1',
+      title: 'Ticket Flow',
+      body: 'A multy versital ticket system',
       img: 'img1.png',
       cardColor: 'color1',
       textColor: 'tesxt color',
     },
     {
-      title: 'Title1',
-      body: 'body1',
-      img: 'img1.png',
+      title: 'Fit Fusion',
+      body: '',
+      img: 'assets\\img\\fitfusion.png',
       cardColor: 'color1',
       textColor: 'tesxt color',
     },

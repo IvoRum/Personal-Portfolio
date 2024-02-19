@@ -1,4 +1,4 @@
 <app-header></app-header>
-<div class="card-holder" gdColumns="30em 30em" fxLayoutGap="20px">
-  <app-card *ngFor="let card of cards" [card]="card"></app-card>
+<div class="card-holder wrap" fxLayout="row wrap" fxLayoutGap="40px">
+  <app-card fxFlex="32%" *ngFor="let card of cards" [card]="card"></app-card>
 </div>

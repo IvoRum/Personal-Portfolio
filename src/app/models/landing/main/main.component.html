@@ -65,21 +65,24 @@
   fxLayout.xs="column"
   fxLayoutGap="20px"
 >
-  <div class="img-box" fxFlex="35%">
-    <img
-      class="img"
-      mat-card-image
-      (click)="openTicketFlowDialog()"
-      src="assets\\img\\TicketFlow.png"
-    />
+  <div class="img-box card-content" fxFlex="35%">
+    <div class="img-box">
+      <img
+        class="img"
+        mat-card-image
+        (click)="openTicketFlowDialog()"
+        src="assets\\img\\TicketFlow.png"
+      />
+    </div>
   </div>
-  <div class="img-box" fxFlex="35%">
-    <img
-      class="img"
-      mat-card-image
-      (click)="openFitFusionDialog()"
-      src="assets\\img\\FitFusionNew.png"
-    />
+  <div class="card-content" fxFlex="35%">
+    <div class="img-box">
+      <img
+        class="img"
+        mat-card-image
+        (click)="openFitFusionDialog()"
+        src="assets\\img\\FitFusionNew.png"
+      />
+    </div>
   </div>
-  <div class="buttons"></div>
 </div>

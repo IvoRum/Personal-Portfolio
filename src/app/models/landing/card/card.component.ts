@@ -8,4 +8,5 @@ import { PorjectCard } from '../domain/ProjectCard';
 })
 export class CardComponent {
   @Input('card') cardDate!: PorjectCard;
+  @Input() action!: any;
 }

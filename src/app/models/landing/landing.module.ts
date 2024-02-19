@@ -5,9 +5,11 @@ import { CardComponent } from './card/card.component';
 import { MatarialModule } from '../material/matarial/matarial.module';
 import { LandingRoutingModule } from './landing-routing.module';
 import { ReusableModule } from '../reusable/reusable.module';
+import { TicketflowComponent } from './ticketflow/ticketflow.component';
+import { FitfusionComponent } from './fitfusion/fitfusion.component';
 
 @NgModule({
-  declarations: [MainComponent, CardComponent],
+  declarations: [MainComponent, CardComponent, TicketflowComponent, FitfusionComponent],
   imports: [CommonModule, MatarialModule, LandingRoutingModule, ReusableModule],
 })
 export class LandingModule {}

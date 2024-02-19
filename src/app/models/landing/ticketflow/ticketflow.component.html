@@ -1,36 +1,34 @@
 <div class="dialog">
-  <mat-dialog-content class="mat-typography">
-    <div class="center">
-      <div class="title" mat-dialog-title>
-        <h1 class="h-text">Ticket Flow</h1>
-      </div>
-      <div class="stack">
-        <a class="steck-item">Spring boot</a>
-        <a class="steck-item">Java Script</a>
-        <a class="steck-item">PosgreSQL</a>
-      </div>
-      <div class="period">From: 01.March.2023 To: 14.June.2023</div>
-      <div class="content">
-        <p>
-          Tickt flow is a all-in-one solution for seamless ticketing, queue
-          management and reservations. Writen as a my batchles thisis Ticket
-          flow constructed a MVC application. Beeing constructed with Spring
-          boot as the back end, with Posgresql as the data base and vanila
-          JavaScript for the front end.
-        </p>
-      </div>
-
-      <div class="gallery">
-        <button (click)="showPrev()">Prev</button>
-        <div class="image-container">
-          <img
-            class="dialog-img"
-            [src]="images[currentIndex]"
-            alt="Gallery Image"
-          />
-        </div>
-        <button (click)="showNext()">Next</button>
-      </div>
+  <div class="center">
+    <div class="title">
+      <h1 class="h-text">Ticket Flow</h1>
     </div>
-  </mat-dialog-content>
+    <div class="stack">
+      <a class="steck-item">Spring boot</a>
+      <a class="steck-item">Java Script</a>
+      <a class="steck-item">PosgreSQL</a>
+    </div>
+    <div class="period">From: 01.March.2023 To: 14.June.2023</div>
+    <div class="content">
+      <p>
+        Tickt flow is a all-in-one solution for seamless ticketing, queue
+        management and reservations. Writen as a my batchles thisis Ticket flow
+        constructed a MVC application. Beeing constructed with Spring boot as
+        the back end, with Posgresql as the data base and vanila JavaScript for
+        the front end.
+      </p>
+    </div>
+
+    <div class="gallery">
+      <button (click)="showPrev()">Prev</button>
+      <div class="image-container">
+        <img
+          class="dialog-img"
+          [src]="images[currentIndex]"
+          alt="Gallery Image"
+        />
+      </div>
+      <button (click)="showNext()">Next</button>
+    </div>
+  </div>
 </div>

@@ -97,7 +97,7 @@ p {
 
 .dialog {
   font-family: "Karla";
-  height: 80%;
+  height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -181,5 +181,6 @@ button:last-child {
   right: 10px;
 }
 
-.title {
+.contentirino {
+  height: 90%;
 }

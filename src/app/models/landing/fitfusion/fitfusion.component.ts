@@ -7,9 +7,8 @@ import { Component } from '@angular/core';
 })
 export class FitfusionComponent {
   images: string[] = [
-    'assets\\img\\TicketFlowdAdmin.png',
-    'assets\\img\\blog1.jpg',
-    'getfit.jpg',
+    'assets\\img\\FitFusion\\main.png',
+    'assets\\img\\FitFusion\\relations.png',
   ];
 
   currentIndex: number = 0;

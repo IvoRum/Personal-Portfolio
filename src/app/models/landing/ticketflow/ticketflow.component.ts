@@ -6,7 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./ticketflow.component.css'],
 })
 export class TicketflowComponent {
-  images: string[] = ['assets\\img\\TicketFlowdAdmin.png'];
+  images: string[] = [
+    'assets\\img\\TicketFlowdAdmin.png',
+    'assets\\img\\TicketFlow\\Employees.png',
+    'assets\\img\\TicketFlow\\Desktop Login.png',
+
+    'assets\\img\\TicketFlow\\nextTicket.png',
+    'assets\\img\\TicketFlow\\userflow.png',
+    'assets\\img\\TicketFlow\\relations.png',
+  ];
 
   currentIndex: number = 0;
 

@@ -96,18 +96,18 @@ p {
 }
 
 .dialog {
+  max-height: calc(100vh - 20px);
   font-family: "Karla";
   height: 90%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.stack {
-  font-family: "Karla";
+  overflow-y: auto;
 }
 
 .content {
+  margin: 0;
+  padding: 0;
 }
 
 .center {
@@ -117,8 +117,8 @@ p {
 }
 
 .dialog-img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 80vw;
+  max-height: 70vw;
   border-radius: 25px;
 }
 
@@ -128,12 +128,21 @@ p {
   justify-content: center;
 }
 
+.stack {
+  font-family: "Karla";
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .steck-item {
   background-color: #504c4c;
   color: #fff;
   border: none;
   border-radius: 25px;
-  padding: 0.25em 1em;
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-right: 5px;
   font-size: 1.5em;
 }
 

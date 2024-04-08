@@ -10,6 +10,7 @@ import {
 import { MatButtonModule } from '@angular/material/button';
 import { TicketflowComponent } from '../ticketflow/ticketflow.component';
 import { FitfusionComponent } from '../fitfusion/fitfusion.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-main',
@@ -33,7 +34,7 @@ export class MainComponent {
       textColor: 'tesxt color',
     },
   ];
-  constructor(public dialog: MatDialog) {}
+  constructor(public dialog: MatDialog, private router: Router) {}
 
   openFitFusionDialog() {
     const dialogRef = this.dialog.open(FitfusionComponent);
@@ -41,8 +42,9 @@ export class MainComponent {
   }
 
   openTicketFlowDialog() {
-    const dialogRef = this.dialog.open(TicketflowComponent);
-    dialogRef.afterClosed();
+    this.router.navigate(['/ticketflow']);
+    //const dialogRef = this.dialog.open(TicketflowComponent);
+    //dialogRef.afterClosed();
   }
 }
 

@@ -11,6 +11,11 @@ const routes: Routes = [
       import('./models/landing/landing.module').then((m) => m.LandingModule),
   },
   {
+    path: 'blog',
+    loadChildren: () =>
+      import('./models/blog/blog.module').then((m) => m.BlogModule),
+  },
+  {
     path: 'newMain',
     loadChildren: () =>
       import('./models/landing/landing.module').then((m) => m.LandingModule),

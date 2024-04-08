@@ -12,4 +12,7 @@ export class HeaderComponent {
   openHome() {
     this.router.navigate(['']);
   }
+  openBlog() {
+    this.router.navigate(['blog']);
+  }
 }

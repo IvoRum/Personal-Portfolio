@@ -1,15 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { PorjectCard } from '../domain/ProjectCard';
-import {
-  MatDialog,
-  MatDialogTitle,
-  MatDialogContent,
-  MAT_DIALOG_DATA,
-  MatDialogModule,
-} from '@angular/material/dialog';
-import { MatButtonModule } from '@angular/material/button';
-import { TicketflowComponent } from '../ticketflow/ticketflow.component';
-import { FitfusionComponent } from '../fitfusion/fitfusion.component';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
 
 @Component({
@@ -37,8 +28,9 @@ export class MainComponent {
   constructor(public dialog: MatDialog, private router: Router) {}
 
   openFitFusionDialog() {
-    const dialogRef = this.dialog.open(FitfusionComponent);
-    dialogRef.afterClosed();
+    this.router.navigate(['/fitfusion']);
+    //const dialogRef = this.dialog.open(FitfusionComponent);
+    //dialogRef.afterClosed();
   }
 
   openTicketFlowDialog() {

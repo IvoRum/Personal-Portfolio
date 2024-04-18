@@ -182,6 +182,10 @@ button {
   cursor: pointer;
 }
 
+pointer {
+  cursor: pointer;
+}
+
 button:first-child {
   left: 10px;
 }

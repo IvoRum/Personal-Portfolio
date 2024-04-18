@@ -3,6 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { ProjectCardComponent } from './models/cards/project-card/project-card.component';
 import { FitfusionComponent } from './models/landing/fitfusion/fitfusion.component';
 import { TicketflowComponent } from './models/landing/ticketflow/ticketflow.component';
+import { ProgramsFitnessComponent } from './models/fitness/programs-fitness/programs-fitness.component';
+import { TrinersFitnessComponent } from './models/fitness/triners-fitness/triners-fitness.component';
 
 const routes: Routes = [
   {
@@ -21,11 +23,24 @@ const routes: Routes = [
       import('./models/landing/landing.module').then((m) => m.LandingModule),
   },
   {
+    path: 'fitfusion/demo',
+    loadChildren: () =>
+      import('./models/fitness/fitness.module').then((m) => m.FitnessModule),
+  },
+  {
+    path: 'fitfusion/demo/programs',
+    component: ProgramsFitnessComponent,
+  },
+  {
+    path: 'fitfusion/demo/trainers',
+    component: TrinersFitnessComponent,
+  },
+  {
     path: 'ticketflow',
     component: TicketflowComponent,
   },
   {
-    path: 'fitfusuion',
+    path: 'fitfusion',
     component: FitfusionComponent,
   },
   { path: '**', redirectTo: '' },

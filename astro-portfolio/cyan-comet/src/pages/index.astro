@@ -34,6 +34,21 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         font-weight: 300;
         height: 100%;
       }
+      .projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .padding-left {
+        padding-left: 2rem;
+      }
+      .padding-right {
+        padding-right: 2rem;
+      }
+      .project-item {
+        flex: 45%;
+      }
     </style>
     <Header />
     <main>
@@ -51,6 +66,14 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         </div>
         <div class="portfolio-picture">
           <img src="CropIvo5.png" />
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project-item padding-right">
+          <img src="FitFusionNew.png" />
+        </div>
+        <div class="project-item">
+          <img src="TicketFlow.png" />
         </div>
       </div>
     </main>

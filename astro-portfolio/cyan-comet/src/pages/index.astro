@@ -1,0 +1,84 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead
+      title={SITE_TITLE}
+      description={SITE_DESCRIPTION}
+    />
+  </head>
+  <body>
+    <style>
+      .introduction {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .portfolio-description {
+        flex: 1 45%;
+        padding-right: 2rem;
+      }
+      .portfolio-picture {
+        flex: 1 25%;
+      }
+      .text-card {
+        position: relative;
+        padding: 2em;
+        font-weight: 300;
+        height: 100%;
+      }
+      .projects {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .padding-left {
+        padding-left: 2rem;
+      }
+      .padding-right {
+        padding-right: 2rem;
+      }
+      .project-item {
+        cursor: pointer;
+
+        flex: 45%;
+      }
+    </style>
+    <Header />
+    <main>
+      <div class="introduction">
+        <div class="portfolio-description">
+          <h1>Hello, World!</h1>
+          <p>
+            Here I dive into a realm where coding finesse
+            intertwines with creative vision, sculpting
+            interactive experiences that captivate and
+            inspire. Explore a fusion of artistry and
+            technical prowess, where every line of code is a
+            brushstroke in the canvas of digital innovation.
+          </p>
+        </div>
+        <div class="portfolio-picture">
+          <img src="CropIvo5.png" />
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project-item padding-right">
+          <img src="FitFusionNew.png" />
+        </div>
+        <div class="project-item">
+          <img src="TicketFlow.png" />
+        </div>
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

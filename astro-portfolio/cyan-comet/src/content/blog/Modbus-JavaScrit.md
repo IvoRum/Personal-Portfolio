@@ -2,7 +2,7 @@
 title: "Modbus and JavaScript"
 description: "How to use modbus whit javascript"
 pubDate: "May 05 2024"
-heroImage: "/blog/blog-placeholder-2.jpg"
+heroImage: "/blog/modbus-js/blog-modbus.png"
 ---
 
 ## What is modbus and why Javascript?
@@ -91,6 +91,8 @@ matches the one on the device.
 Then in the `client.readHoldingRegisters(5, 2)` set the first number to the address you want to access on the device and the second parameter to the length whit shod be specified in the documentation.
 
 After that you are all set to create an user interface for communication whit modbus. Have fun programming!
+
+## Demo comming soon!!
 
 ## Sources
 

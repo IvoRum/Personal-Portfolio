@@ -1,7 +1,7 @@
 ---
 title: "AI Chains"
-description: "Practicle examples of ai chains"
-pubDate: "Apr 09 2023"
+description: "Practical examples of ai chains"
+pubDate: "Apr 09 2024"
 heroImage: "/blog/blog-placeholder-3.jpg"
 ---
 

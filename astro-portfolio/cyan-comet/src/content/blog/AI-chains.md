@@ -29,7 +29,7 @@ Link to sigh-up: https://huggingface.co/
 
 After sighing up we can get our access token from: Settings -> Access Tokens
 
-![alt text](../img/image.png)
+![Access Token](/blog/ai-chains/image.png)
 
 #### Transformers
 

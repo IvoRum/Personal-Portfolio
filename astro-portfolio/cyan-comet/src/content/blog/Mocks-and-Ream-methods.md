@@ -1,6 +1,6 @@
 ---
 title: "Mocks and Ream methods"
-description: "Practical examples of ai chains"
+description: "Practical mocks in spring boot"
 pubDate: "Jun 21 2024"
 heroImage: "/blog/blog-placeholder-2.jpg"
 ---

@@ -9,8 +9,7 @@ import { TrinersFitnessComponent } from './models/fitness/triners-fitness/triner
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () =>
-      import('./models/landing/landing.module').then((m) => m.LandingModule),
+    redirectTo: 'fitfusion/demo',
   },
   {
     path: 'blog',

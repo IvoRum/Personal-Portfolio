@@ -2,7 +2,7 @@
 title: "Chat Unity"
 description: "A stand alone android chat app build with web sockets "
 pubDate: "Jul 25 2024"
-heroImage: "/demo/banner/chatunity.png"
+heroImage: "/projects/banner/chatunity.png"
 ---
 
 ## Packeges
@@ -66,13 +66,3 @@ gug: userId
 ```
 
 returns: set of all foud friends.
-
-## Database
-
-[insert.sql](https://github.com/user/repo/database/insert.sql)
-
-[drop.sql](https://github.com/user/repo/database/drop.sql)
-
-[select.sql](https://github.com/user/repo/database/selecs.sql)
-
-[create.sql](https://github.com/user/repo/database/create.sql)

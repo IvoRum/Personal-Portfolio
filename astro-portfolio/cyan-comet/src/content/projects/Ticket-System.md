@@ -2,7 +2,7 @@
 title: "Ticket Flow"
 description: "A line management service implemented with virtual tickets "
 pubDate: "Jun 09 2023"
-heroImage: "/demo/banner/ticketflow.png"
+heroImage: "/projects/banner/ticketflow.png"
 ---
 
 Ticket Flow is my implementation of the waiting-in-line problem. It was developed as my bachelor's thesis. In essence, the system is a way for any business to organize their line problems. The application is applicable for various businesses and will work for many unusual scenarios.

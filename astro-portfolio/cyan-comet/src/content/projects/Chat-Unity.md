@@ -2,7 +2,7 @@
 title: "Chat Unity"
 description: "A stand alone android chat app build with web sockets "
 pubDate: "Jul 25 2024"
-heroImage: "/demo/banner/chatunity.png"
+heroImage: "/projects/banner/chatunity.png"
 ---
 
 ## Packeges

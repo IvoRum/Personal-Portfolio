@@ -2,7 +2,7 @@
 title: "Fit Fusion"
 description: "A Angular practice project"
 pubDate: "Sep 01 2023"
-heroImage: "/demo/banner/fitfusion.png"
+heroImage: "/projects/banner/fitfusion.png"
 ---
 
 Fit fusion is a side project of mine where I focus on building on my Angular knowledge.

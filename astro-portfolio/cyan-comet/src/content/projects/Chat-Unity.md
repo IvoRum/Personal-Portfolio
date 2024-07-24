@@ -66,13 +66,3 @@ gug: userId
 ```
 
 returns: set of all foud friends.
-
-## Database
-
-[insert.sql](https://github.com/user/repo/database/insert.sql)
-
-[drop.sql](https://github.com/user/repo/database/drop.sql)
-
-[select.sql](https://github.com/user/repo/database/selecs.sql)
-
-[create.sql](https://github.com/user/repo/database/create.sql)

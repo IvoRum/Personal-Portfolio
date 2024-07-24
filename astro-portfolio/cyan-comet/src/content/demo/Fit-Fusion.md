@@ -1,7 +1,7 @@
 ---
 title: "Fit Fusion"
 description: "A Angular practice project"
-pubDate: "Jun 09 2023"
+pubDate: "Sep 01 2023"
 heroImage: "/demo/banner/fitfusion.png"
 ---
 

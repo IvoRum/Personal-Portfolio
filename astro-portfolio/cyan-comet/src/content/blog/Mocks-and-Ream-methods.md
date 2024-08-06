@@ -1,12 +1,8 @@
-Sure, here is the corrected version:
-
 ---
-
 title: "Mocks and Real Methods"
 description: "Practical mocks in Spring Boot"
 pubDate: "Jun 21, 2024"
 heroImage: "/blog/blog-placeholder-2.jpg"
-
 ---
 
 Using Mockito Spy for mocking and using functions as they are. Sometimes you want to use mocks just for some functions. So that’s where `when(..).thenCallRealMethod()` comes in.

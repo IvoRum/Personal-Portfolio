@@ -1,12 +1,8 @@
-Sure, here is the corrected version:
-
 ---
-
 title: "Modbus and JavaScript"
 description: "How to use Modbus with JavaScript"
 pubDate: "May 05, 2024"
 heroImage: "/blog/modbus-js/blog-modbus.png"
-
 ---
 
 ## What is Modbus and Why JavaScript?

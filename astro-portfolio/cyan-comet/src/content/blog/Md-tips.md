@@ -15,4 +15,10 @@ You can add images using:
 
 `![alt text](image_url)`
 
-Last updated: 30.06.2024
+# Links
+
+`[Link text](link_address)`
+
+[Link text](link_address)
+
+Last updated: 06.08.2024

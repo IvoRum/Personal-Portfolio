@@ -1,14 +1,17 @@
+Sure, here is the corrected version:
+
 ---
-title: "Mocks and Ream methods"
-description: "Practical mocks in spring boot"
-pubDate: "Jun 21 2024"
+
+title: "Mocks and Real Methods"
+description: "Practical mocks in Spring Boot"
+pubDate: "Jun 21, 2024"
 heroImage: "/blog/blog-placeholder-2.jpg"
+
 ---
 
-Using mokito spy for mocking and using functions as they are. Sometimes you like to use mocks just for some functions. So thats ware
-`when(..).thenCallRealMethod()` comes is.
+Using Mockito Spy for mocking and using functions as they are. Sometimes you want to use mocks just for some functions. So that’s where `when(..).thenCallRealMethod()` comes in.
 
-So lets get into the code:
+So let's get into the code:
 
 ```java
 class ActivitySearchServiceMockTest extends TestBehaviourValidation {
@@ -18,23 +21,23 @@ class ActivitySearchServiceMockTest extends TestBehaviourValidation {
     private MyRepository myRepository;
 
     @Test
-    void myMockTest(){
-	    when(myService.getMs()).therReturn("Hello form the mock!!");
-	    //when
-	    String msResult= myService.getMs();
-	    //then
-	    assertEquals("Hello form the mock!!",msResult);
+    void myMockTest() {
+        when(myService.getMs()).thenReturn("Hello from the mock!!");
+        // when
+        String msResult = myService.getMs();
+        // then
+        assertEquals("Hello from the mock!!", msResult);
     }
 
     @Test
-    void myNormaltest(){
-	    when(myService.getMs()).thenCallRealMethod();
-	    //when
-	    String msResult= myService.getMs();
-	    //then
-	    assertEquals("Hello form the Real!!",msResult);
+    void myNormalTest() {
+        when(myService.getMs()).thenCallRealMethod();
+        // when
+        String msResult = myService.getMs();
+        // then
+        assertEquals("Hello from the Real!!", msResult);
     }
 }
 ```
 
-And that is how you use mocks and real methods in one `@Autowired` test class for spring service and repo testing.
+And that is how you use mocks and real methods in one `@Autowired` test class for Spring service and repository testing.

@@ -16,3 +16,8 @@ heroImage: "/projects/banner/volts.png"
 # Blog posts
 
 [devlob #1](/blog/fusinon360/)
+[devlob #2](/blog/spring-pipeline/)
+
+# Links
+
+[Volts Repo](https://github.com/100volts)

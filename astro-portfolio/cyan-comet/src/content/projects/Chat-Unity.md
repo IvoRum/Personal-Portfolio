@@ -5,6 +5,10 @@ pubDate: "Jul 25 2024"
 heroImage: "/projects/banner/chatunity.png"
 ---
 
+## Repository
+
+[Chat-unity Repo](https://github.com/IvoRum/ChatUnity)
+
 ## Packeges
 
 ### Auth

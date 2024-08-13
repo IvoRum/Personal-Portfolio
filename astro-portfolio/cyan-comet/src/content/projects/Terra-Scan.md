@@ -10,3 +10,9 @@ This mobile application provides real-time insights into soil types and earthqua
 ![Live demo](../../../public/projects/terrascan/terrascnanlivedemo.jpg)
 
 Live demo
+
+# Links
+
+[Terra scan Android Repo](https://github.com/IvoRum/Terra-Scan-Mobile)
+
+[Terra scan Spring server Repo](https://github.com/IvoRum/Terra-Scan-Server)

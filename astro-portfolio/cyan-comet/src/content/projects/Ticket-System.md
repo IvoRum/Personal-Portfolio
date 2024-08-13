@@ -27,3 +27,7 @@ The second flow shows how the system is used by the Administrator and the proces
 ![Implementation](../../../public/projects/ticketflow/impl.png)
 
 In the diagram is shown how the system is implemented as a many-to-many node system of inner connected favors and ticket types. And how the system knows witch person is next in line when you have many counted byt all of them are doing different tickets but some of them game tickets in common. This is very hard to get your head around. But in many administrative structures one counter may on 3 different favors and the counter next to it will work only 2 of the 3 favors. So as a wrap the system supports many favors all being done by a mix of counters.
+
+# Links
+
+[Ticket Flow Repo](https://github.com/IvoRum/TicketSystem)

@@ -9,8 +9,12 @@ import { TrinersFitnessComponent } from './models/fitness/triners-fitness/triner
 const routes: Routes = [
   {
     path: '',
+<<<<<<< HEAD
     redirectTo: 'demo',
     pathMatch: 'full',
+=======
+    redirectTo: 'fitfusion/demo',
+>>>>>>> fc10d9e2c5201bce39ac6c65c3b543518f8d22bb
   },
   {
     path: 'blog',

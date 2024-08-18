@@ -15,8 +15,9 @@ heroImage: "/projects/banner/volts.png"
 
 # Blog posts
 
-[devlob #1](/blog/fusinon360/)
-[devlob #2](/blog/spring-pipeline/)
+[devlog #1](/blog/fusinon360/)
+[devlog #2](/blog/spring-pipeline/)
+[devlog #3](/blog/home-server/)
 
 # Links
 

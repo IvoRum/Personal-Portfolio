@@ -9,7 +9,12 @@ import { TrinersFitnessComponent } from './models/fitness/triners-fitness/triner
 const routes: Routes = [
   {
     path: '',
+<<<<<<< HEAD
+    redirectTo: 'demo',
+    pathMatch: 'full',
+=======
     redirectTo: 'fitfusion/demo',
+>>>>>>> fc10d9e2c5201bce39ac6c65c3b543518f8d22bb
   },
   {
     path: 'blog',
@@ -22,16 +27,16 @@ const routes: Routes = [
       import('./models/landing/landing.module').then((m) => m.LandingModule),
   },
   {
-    path: 'fitfusion/demo',
+    path: 'demo',
     loadChildren: () =>
       import('./models/fitness/fitness.module').then((m) => m.FitnessModule),
   },
   {
-    path: 'fitfusion/demo/programs',
+    path: 'demo/programs',
     component: ProgramsFitnessComponent,
   },
   {
-    path: 'fitfusion/demo/trainers',
+    path: 'demo/trainers',
     component: TrinersFitnessComponent,
   },
   {

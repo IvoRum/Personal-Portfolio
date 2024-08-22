@@ -1,7 +1,7 @@
 ---
-title: "Mocks and Real Methods"
-description: "Practical mocks in Spring Boot"
-pubDate: "Aug 23, 2024"
+title: "So you whant to mock"
+description: "Moking the usfull part"
+pubDate: "Jun 22, 2024"
 heroImage: "/blog/blog-placeholder-2.jpg"
 ---
 

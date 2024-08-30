@@ -1,5 +1,5 @@
 ---
-title: "So you whant to mock"
+title: "So you want to mock"
 description: "Moking the usfull part"
 pubDate: "Aug 30, 2024"
 heroImage: "/blog/mokito_v2.png"

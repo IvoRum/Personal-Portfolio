@@ -50,7 +50,7 @@ Here are some of the free components I reworked for my project:
 
 This is the homepage for the web interface. I added the pre-built components as React components and called them in Astro, so this is just HTML in the end.
 
-![Home screnn Features](/blog/ui_library/p6.png)
+![Home screnn Features](/blog/ui_library/p5.png)
 
 Similarly, this is the Features component and the Newsletter subscription form.
 

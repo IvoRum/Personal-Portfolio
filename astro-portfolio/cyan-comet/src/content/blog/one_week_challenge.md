@@ -1,11 +1,9 @@
 ---
-title: "UI Libraries I Found on the Internet"
-description: "The UI libraries I use in my personal project Volts log 4"
+title: "One week Challenge"
+description: "A challenge to design, create, and publish software in a week."
 pubDate: "Oct 7, 2024"
 heroImage: "/blog/sdd/owc.png"
 ---
-
-One Week Project
 
 # Introduction
 

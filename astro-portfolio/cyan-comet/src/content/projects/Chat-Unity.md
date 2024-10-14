@@ -23,9 +23,13 @@ The project has a lot of functionality for a side project aimed at learning netw
 
 ## Packeges
 
+The packages are simple strings of letters and numbers separated by special symbols. Every package starts with a keyword like log. After the keyword, there is a special symbol : that separates the keyword from the package content.
+
 ### Auth
 
 #### Log in
+
+The login package syntax is simple. A keyword log is followed by an email and password, separated by a space. Spaces are not allowed in the password.
 
 ```
 log: ivo@mail.com ivo12345678
@@ -37,11 +41,15 @@ log: deme@mail.com deme12345678
 
 ### Register
 
+The registration syntax starts with the keyword reg, followed by an email and password. Spaces are not allowed in the password. Then, there are two names: the first is the user's first name, and the second is the user's family name.
+
 ```
-reg: newUser@mail.com newuserpass12345678 08879465 ivan ivanov
+reg: newUser@mail.com newuserpass12345678 08879465 Lucas Bennett
 ```
 
 ### Messages
+
+The register package starts with the keyword gms or sms. gms stands for "get message," and sms stands for "send message."
 
 #### Bulck order of messages
 
@@ -71,11 +79,15 @@ returns: only if problem whit the message.
 
 ### Friends
 
+Getting all friends for a given user works as follows: the keyword gfr, which stands for "get friends," is used. The system will then return all friends for the given user.
+
 ```
 gfr: userId
 ```
 
 ### Group
+
+Getting all groups is as follows: the keyword gug, which stands for "get user groups," is used. The system will return a list of all user groups.
 
 ```
 gug: userId

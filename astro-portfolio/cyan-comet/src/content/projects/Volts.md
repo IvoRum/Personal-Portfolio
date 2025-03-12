@@ -19,7 +19,7 @@ This project presents the **design and development of a monitoring system** that
 Key aspects of the project include:
 
 - **Microservices Architecture:** Implemented with **Spring Boot**, ensuring modularity, scalability, and easy maintenance.
-- **Real-Time Data Processing:** The system collects and analyzes resource consumption data (electricity, water, gas) to optimize operational efficiency.
+- **Real-Time Data Processing:** The system collects and analyzes resource consumption data (electricity, water, gas) to optimize operational efficiency. The data collection works by using **Modbus-compatible devices**. The system has been tested using a **Siemens Sentron** electric meter.
 - **Secure and Scalable Infrastructure:** Built with **containerized deployment**, CI/CD pipelines, and **authentication layers** for enhanced security.
 - **User-Friendly Interface:** Developed using **React** and integrated with a powerful API for seamless data visualization and reporting.
 - **Automated Workflows:** Leveraging **GitHub Actions** for continuous deployment and system monitoring.

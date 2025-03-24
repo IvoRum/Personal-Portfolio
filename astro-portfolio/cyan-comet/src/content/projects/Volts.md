@@ -40,7 +40,7 @@ Graph representation of the data base.
 
 <video width="100%" controls>
   <source src="/projects/volts/reading_nomally.mp4" type="video/mp4">
-  Your browser does not support the video tag.
+  Your browser does not support the video tag
 </video>
 
 Video demo of the connecting system reading date from the factory and sending it to the main monitoring system.

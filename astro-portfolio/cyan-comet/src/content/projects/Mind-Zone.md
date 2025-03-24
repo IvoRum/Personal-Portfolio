@@ -13,7 +13,7 @@ The application was developed as part of a [DXC](https://www.linkedin.com/showca
 
 ![survay](../../../public/projects/mindzone/survey.PNG)
 
-![create game](../../../public/projects/mindzone/activeGames.png)
+![create game](../../../public/projects/mindzone/games.png)
 
 ## Games
 

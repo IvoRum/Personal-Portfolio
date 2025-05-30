@@ -1,7 +1,7 @@
 ---
 title: "JPrime 2025"
 description: "My experience going to JPrime 2025"
-pubDate: "May 31, 2025"
+pubDate: "May 30, 2025"
 heroImage: "/blog/jprime_2025/jprime_banner.png"
 ---
 

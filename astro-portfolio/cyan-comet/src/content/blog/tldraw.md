@@ -45,7 +45,7 @@ Here are the visualizations:
 Listen to the email being read aloud:
 
 <audio controls>
-  <source src="../../../public/blog/tldraw/tts_male_reading_email.wav" type="audio/wav">
+  <source src="/blog/tldraw/tts_male_reading_email.wav" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 

@@ -13,6 +13,41 @@ import { SITE_TITLE } from "../consts";
       <HeaderLink href="/projects">Projects</HeaderLink>
       <HeaderLink href="/certifications">Certifications</HeaderLink>
     </div>
+    <button
+      class="theme-toggle"
+      type="button"
+      aria-label="Switch to light mode"
+      aria-pressed="false"
+      title="Switch to light mode"
+    >
+      <svg
+        class="theme-icon theme-icon-sun"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        aria-hidden="true"
+      >
+        <circle cx="12" cy="12" r="4"></circle>
+        <path
+          d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"
+        ></path>
+      </svg>
+      <svg
+        class="theme-icon theme-icon-moon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.6"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        aria-hidden="true"
+      >
+        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"
+        ></path>
+      </svg>
+    </button>
     <div class="social-links">
       <a
         href="https://www.linkedin.com/in/ivaylo-rumenov-0671b7224/"
@@ -75,7 +110,7 @@ import { SITE_TITLE } from "../consts";
     z-index: 50;
     margin: 0;
     padding: 0;
-    background-color: rgba(11, 13, 15, 0.58);
+    background-color: var(--header-bg);
     background-image: var(--glass-scratches);
     border-bottom: 1px solid var(--border);
     backdrop-filter: blur(20px) saturate(115%);
@@ -115,18 +150,13 @@ import { SITE_TITLE } from "../consts";
     flex-shrink: 0;
     width: 11px;
     height: 11px;
-    background: linear-gradient(
-      150deg,
-      rgba(255, 255, 255, 0.8),
-      rgba(255, 255, 255, 0.22)
-    );
+    background: var(--brand-mark);
     border-radius: 3px;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65),
-      0 1px 0 rgba(0, 0, 0, 0.4);
+    box-shadow: var(--brand-mark-shadow);
   }
 
   h2 a:hover {
-    color: #f3f1ed;
+    color: var(--text-strong);
   }
 
   .internal-links {
@@ -135,6 +165,38 @@ import { SITE_TITLE } from "../consts";
     align-items: center;
     gap: 0.15rem;
     margin-left: auto;
+  }
+
+  .theme-toggle {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-left: 0.25rem;
+    padding: 0;
+    color: var(--text-dim);
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    cursor: pointer;
+    transition: color 0.2s ease, background-color 0.2s ease,
+      border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .theme-toggle:hover {
+    color: var(--text);
+    background: var(--surface-2);
+    border-color: var(--border-strong);
+  }
+
+  .theme-toggle:active {
+    transform: scale(0.94);
+  }
+
+  .theme-toggle svg {
+    width: 16px;
+    height: 16px;
   }
 
   .social-links {
@@ -163,7 +225,7 @@ import { SITE_TITLE } from "../consts";
   }
 
   .social-links a:hover {
-    color: #e9e7e3;
+    color: var(--text);
     background: var(--surface-2);
     transform: translateY(-1px);
   }
@@ -193,5 +255,40 @@ import { SITE_TITLE } from "../consts";
     .internal-links::-webkit-scrollbar {
       display: none;
     }
+
+    .theme-toggle {
+      margin-left: auto;
+    }
   }
 </style>
+<script>
+  const root = document.documentElement;
+  const toggle = document.querySelector(".theme-toggle");
+  const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+  const syncToggle = () => {
+    if (!toggle) return;
+    const isLight = root.dataset.theme === "light";
+    const label = isLight ? "Switch to dark mode" : "Switch to light mode";
+    toggle.setAttribute("aria-label", label);
+    toggle.setAttribute("title", label);
+    toggle.setAttribute("aria-pressed", String(isLight));
+  };
+
+  toggle?.addEventListener("click", () => {
+    const next = root.dataset.theme === "light" ? "dark" : "light";
+    root.dataset.theme = next;
+    try {
+      localStorage.setItem("theme", next);
+    } catch {
+      /* Storage can be unavailable in private mode — theme still switches. */
+    }
+    themeMeta?.setAttribute(
+      "content",
+      next === "light" ? "#e9e6e1" : "#0c0e10"
+    );
+    syncToggle();
+  });
+
+  syncToggle();
+</script>

@@ -47,8 +47,7 @@ const heroSrc = heroImage
         filter: saturate(0.88) brightness(0.97);
         border: 1px solid var(--border);
         border-radius: var(--radius-lg);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06),
-          0 40px 90px -55px rgba(0, 0, 0, 0.95);
+        box-shadow: var(--shadow-hero);
       }
       .prose {
         width: min(760px, 100% - 2.5rem);
@@ -82,16 +81,16 @@ const heroSrc = heroImage
         align-items: center;
         gap: 0.5rem;
         padding: 0.32rem 0.7rem;
-        color: #dbe6e8;
-        background: rgba(255, 255, 255, 0.055);
-        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: var(--chip-text);
+        background: var(--chip-bg);
+        border: 1px solid var(--chip-border);
         border-radius: 999px;
       }
       .date > :global(time)::before {
         content: "";
         width: 5px;
         height: 5px;
-        background: rgba(255, 255, 255, 0.5);
+        background: var(--dot);
         border-radius: 50%;
       }
       .last-updated-on {

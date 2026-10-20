@@ -27,10 +27,25 @@ const {
   name="viewport"
   content="width=device-width,initial-scale=1"
 />
-<meta name="color-scheme" content="dark" />
-<meta name="theme-color" content="#0b0d0f" />
+<meta name="color-scheme" content="dark light" />
+<meta name="theme-color" content="#0c0e10" />
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="generator" content={Astro.generator} />
+<script is:inline>
+  (() => {
+    let theme = "dark";
+    try {
+      if (localStorage.getItem("theme") === "light") theme = "light";
+    } catch {
+      theme = "dark";
+    }
+    document.documentElement.dataset.theme = theme;
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute("content", theme === "light" ? "#e9e6e1" : "#0c0e10");
+    }
+  })();
+</script>
 
 <!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />

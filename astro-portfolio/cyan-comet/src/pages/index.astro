@@ -28,18 +28,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         gap: clamp(2rem, 5vw, 4rem);
         padding: clamp(1.75rem, 4vw, 3.25rem);
         overflow: hidden;
-        background-color: rgba(255, 255, 255, 0.018);
-        background-image: var(--glass-scratches),
-          linear-gradient(
-            150deg,
-            rgba(255, 255, 255, 0.07),
-            rgba(255, 255, 255, 0.015) 52%,
-            rgba(255, 255, 255, 0.045)
-          );
+        background-color: var(--glass-bg-soft);
+        background-image: var(--glass-scratches), var(--intro-bg);
         border: 1px solid var(--border);
         border-radius: var(--radius-lg);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08),
-          var(--shadow-card);
+        box-shadow: var(--inset-highlight), var(--shadow-card);
         backdrop-filter: blur(14px) saturate(112%);
         -webkit-backdrop-filter: blur(14px) saturate(112%);
       }
@@ -50,14 +43,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         inset: 0;
         z-index: 0;
         pointer-events: none;
-        background: linear-gradient(
-          118deg,
-          transparent 18%,
-          rgba(255, 255, 255, 0.038) 34%,
-          transparent 52%,
-          rgba(255, 255, 255, 0.018) 70%,
-          transparent 88%
-        );
+        background: var(--intro-sheen);
       }
 
       .introduction > * {
@@ -80,12 +66,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
       @supports ((-webkit-background-clip: text) or (background-clip: text)) {
         .portfolio-description h1 {
           color: transparent;
-          background: linear-gradient(
-            110deg,
-            #f2efe9 8%,
-            #dfe8e8 48%,
-            #c8cad3 92%
-          );
+          background: var(--headline-gradient);
           -webkit-background-clip: text;
           background-clip: text;
           -webkit-text-fill-color: transparent;
@@ -105,15 +86,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         width: min(100%, 340px);
         padding: 1px;
         overflow: hidden;
-        background: linear-gradient(
-          150deg,
-          rgba(255, 255, 255, 0.48),
-          rgba(255, 255, 255, 0.06) 45%,
-          rgba(255, 255, 255, 0.22)
-        );
+        background: var(--portrait-border);
         border-radius: 26px;
-        box-shadow: 0 30px 70px -40px rgba(0, 0, 0, 0.9),
-          var(--shadow-card);
+        box-shadow: var(--portrait-shadow), var(--shadow-card);
       }
 
       .portfolio-picture img {
@@ -148,17 +123,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         position: relative;
         display: block;
         overflow: hidden;
-        background-color: rgba(255, 255, 255, 0.015);
-        background-image: var(--glass-scratches),
-          linear-gradient(
-            160deg,
-            rgba(255, 255, 255, 0.06),
-            rgba(255, 255, 255, 0.012)
-          );
+        background-color: var(--glass-bg);
+        background-image: var(--glass-scratches), var(--glass-sheen);
         border: 1px solid var(--border);
         border-radius: var(--radius);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06),
-          var(--shadow-card);
+        box-shadow: var(--inset-highlight), var(--shadow-card);
         transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
           border-color 0.4s ease, box-shadow 0.4s ease;
       }
@@ -175,8 +144,8 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         height: 2.2rem;
         font-size: 1rem;
         color: var(--text);
-        background: rgba(18, 20, 22, 0.55);
-        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: var(--arrow-bg);
+        border: 1px solid var(--arrow-border);
         border-radius: 999px;
         opacity: 0;
         transform: translate(-4px, 4px);
@@ -191,20 +160,15 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
         z-index: 1;
         pointer-events: none;
         background-image: var(--glass-scratches),
-          linear-gradient(
-            to top,
-            rgba(11, 13, 15, 0.42),
-            transparent 55%
-          );
+          linear-gradient(to top, var(--image-scrim), transparent 55%);
         opacity: 0.55;
         transition: opacity 0.4s ease;
       }
 
       .project-item a:hover {
         transform: translateY(-3px);
-        border-color: rgba(255, 255, 255, 0.22);
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
-          var(--shadow-lift);
+        border-color: var(--border-hover);
+        box-shadow: var(--inset-highlight-strong), var(--shadow-lift);
       }
 
       .project-item a:hover::before {

@@ -57,23 +57,45 @@ const today = new Date();
 </footer>
 <style>
   footer {
-    padding: 2em 1em 6em 1em;
-    background: linear-gradient(var(--gray-gradient))
-      no-repeat;
-    color: rgb(var(--gray));
+    margin-top: 5rem;
+    padding: 3rem 1.5rem;
+    font-size: 0.88rem;
+    color: var(--text-dim);
     text-align: center;
+    background-color: rgba(11, 13, 15, 0.4);
+    background-image: var(--glass-scratches),
+      linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.025));
+    border-top: 1px solid var(--border);
   }
   .social-links {
     display: flex;
     justify-content: center;
-    gap: 1em;
-    margin-top: 1em;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
   }
   .social-links a {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: var(--text-muted);
     text-decoration: none;
-    color: rgb(var(--gray));
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: color 0.25s ease, border-color 0.25s ease,
+      background-color 0.25s ease, transform 0.25s ease,
+      box-shadow 0.25s ease;
+  }
+  .social-links svg {
+    width: 18px;
+    height: 18px;
   }
   .social-links a:hover {
-    color: rgb(var(--gray-dark));
+    color: #e9e7e3;
+    background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(255, 255, 255, 0.24);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px -14px rgba(0, 0, 0, 0.9);
   }
 </style>

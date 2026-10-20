@@ -15,41 +15,238 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
   </head>
   <body>
     <style>
-      .introduction {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+      main {
+        padding-top: clamp(2rem, 5vw, 4rem);
       }
-      .portfolio-description {
-        flex: 1 45%;
-        padding-right: 2rem;
-      }
-      .portfolio-picture {
-        flex: 1 25%;
-      }
-      .text-card {
-        position: relative;
-        padding: 2em;
-        font-weight: 300;
-        height: 100%;
-      }
-      .projects {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-      }
-      .padding-left {
-        padding-left: 2rem;
-      }
-      .padding-right {
-        padding-right: 2rem;
-      }
-      .project-item {
-        cursor: pointer;
 
-        flex: 45%;
+      .introduction {
+        position: relative;
+        isolation: isolate;
+        display: grid;
+        grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+        align-items: center;
+        gap: clamp(2rem, 5vw, 4rem);
+        padding: clamp(1.75rem, 4vw, 3.25rem);
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.018);
+        background-image: var(--glass-scratches),
+          linear-gradient(
+            150deg,
+            rgba(255, 255, 255, 0.07),
+            rgba(255, 255, 255, 0.015) 52%,
+            rgba(255, 255, 255, 0.045)
+          );
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08),
+          var(--shadow-card);
+        backdrop-filter: blur(14px) saturate(112%);
+        -webkit-backdrop-filter: blur(14px) saturate(112%);
+      }
+
+      .introduction::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 0;
+        pointer-events: none;
+        background: linear-gradient(
+          118deg,
+          transparent 18%,
+          rgba(255, 255, 255, 0.038) 34%,
+          transparent 52%,
+          rgba(255, 255, 255, 0.018) 70%,
+          transparent 88%
+        );
+      }
+
+      .introduction > * {
+        position: relative;
+        z-index: 1;
+      }
+
+      .portfolio-description {
+        min-width: 0;
+      }
+
+      .portfolio-description h1 {
+        margin-bottom: 0;
+        font-size: clamp(2.75rem, 6vw, 4.5rem);
+        font-weight: 700;
+        line-height: 1.02;
+        letter-spacing: -0.04em;
+      }
+
+      @supports ((-webkit-background-clip: text) or (background-clip: text)) {
+        .portfolio-description h1 {
+          color: transparent;
+          background: linear-gradient(
+            110deg,
+            #f2efe9 8%,
+            #dfe8e8 48%,
+            #c8cad3 92%
+          );
+          -webkit-background-clip: text;
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
+      .portfolio-description p {
+        max-width: 54ch;
+        margin: 1.5rem 0 0;
+        font-size: 1.05rem;
+        line-height: 1.85;
+        color: var(--text-muted);
+      }
+
+      .portfolio-picture {
+        justify-self: center;
+        width: min(100%, 340px);
+        padding: 1px;
+        overflow: hidden;
+        background: linear-gradient(
+          150deg,
+          rgba(255, 255, 255, 0.48),
+          rgba(255, 255, 255, 0.06) 45%,
+          rgba(255, 255, 255, 0.22)
+        );
+        border-radius: 26px;
+        box-shadow: 0 30px 70px -40px rgba(0, 0, 0, 0.9),
+          var(--shadow-card);
+      }
+
+      .portfolio-picture img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        object-fit: cover;
+        border-radius: 25px;
+        filter: saturate(0.9) contrast(1.02);
+        transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1),
+          filter 0.5s ease;
+      }
+
+      .portfolio-picture:hover img {
+        transform: scale(1.015);
+        filter: saturate(0.98) contrast(1.02);
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: clamp(1rem, 2.2vw, 1.75rem);
+        margin-top: clamp(2.5rem, 5vw, 4rem);
+      }
+
+      .project-item {
+        padding: 0;
+        cursor: pointer;
+      }
+
+      .project-item a {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        background-color: rgba(255, 255, 255, 0.015);
+        background-image: var(--glass-scratches),
+          linear-gradient(
+            160deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.012)
+          );
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06),
+          var(--shadow-card);
+        transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1),
+          border-color 0.4s ease, box-shadow 0.4s ease;
+      }
+
+      .project-item a::before {
+        content: "↗";
+        position: absolute;
+        top: 0.9rem;
+        right: 0.9rem;
+        z-index: 2;
+        display: grid;
+        place-items: center;
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1rem;
+        color: var(--text);
+        background: rgba(18, 20, 22, 0.55);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 999px;
+        opacity: 0;
+        transform: translate(-4px, 4px);
+        backdrop-filter: blur(10px);
+        transition: opacity 0.35s ease, transform 0.35s ease;
+      }
+
+      .project-item a::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        background-image: var(--glass-scratches),
+          linear-gradient(
+            to top,
+            rgba(11, 13, 15, 0.42),
+            transparent 55%
+          );
+        opacity: 0.55;
+        transition: opacity 0.4s ease;
+      }
+
+      .project-item a:hover {
+        transform: translateY(-3px);
+        border-color: rgba(255, 255, 255, 0.22);
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+          var(--shadow-lift);
+      }
+
+      .project-item a:hover::before {
+        opacity: 1;
+        transform: none;
+      }
+
+      .project-item a:hover::after {
+        opacity: 0.75;
+      }
+
+      .project-item img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        filter: saturate(0.86) brightness(0.96);
+        transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+          filter 0.5s ease;
+      }
+
+      .project-item a:hover img {
+        transform: scale(1.03);
+        filter: saturate(0.96) brightness(1.01);
+      }
+
+      @media (max-width: 900px) {
+        .introduction {
+          grid-template-columns: 1fr;
+          text-align: left;
+        }
+
+        .portfolio-picture {
+          width: min(100%, 300px);
+          justify-self: center;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .projects {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
     <Header />
